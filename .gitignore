@@ -1,4 +1,4 @@
 *.pyc
 .vscode/settings.json
 psx_scrapy/launchd_out
-data/*
+data/*.xlsx
