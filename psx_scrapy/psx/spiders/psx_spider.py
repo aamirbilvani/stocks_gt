@@ -8,7 +8,6 @@ class PSXSpider(scrapy.Spider):
 
     def start_requests(self):
         current_date = datetime.today()
-        input_rows = []
 
         path = '../data/{:04d}_{:02d}_{:02d}.xlsx'.format(current_date.year, current_date.month, current_date.day)
 
