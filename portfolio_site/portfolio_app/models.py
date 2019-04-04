@@ -46,8 +46,8 @@ class Stock(models.Model):
                 if col_symbol == self.symbol:
                     value = data_list[-1][i].strip()
                     if not value:
-                        value = data_list[-1][i].strip()
-                    current_value = float(data_list[-1][i])
+                        value = data_list[-2][i].strip()
+                    current_value = float(value)
                     return current_value
 
 
@@ -56,7 +56,10 @@ class StockPick(models.Model):
     quantity = models.IntegerField('Quantity')
     value_per_share = models.FloatField('Value per share')
     date_added = models.DateTimeField('Date Added')
-    portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE)
+    portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE, related_name='stockpicks')
 
     def __str__(self):
-        return self.stock.name + ", Quantity: " + str(self.quantity)
+        return self.stock.name + ", Quantity: " + str(self.quantity) + ", Quantity: " + str(self.quantity)
+    
+    def current_value(self):
+        return self.stock.current_value() * self.quantity

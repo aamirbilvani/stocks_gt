@@ -1,0 +1,30 @@
+{% load stockpick_extras %} 
+{% if portfolio %}
+    <table>
+        <tr>
+            <th>SYMBOL</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Stock Value</th>
+            <th>Total</th>
+        </tr>
+        {% for stockpick in portfolio.stockpicks.all %}
+        <tr>
+            <td>{{stockpick.stock.symbol}}</td>
+            <td>{{stockpick.stock.name}}</td>
+            <td>{{stockpick.quantity}}</td>
+            <td>{{stockpick.stock|current_value|stringformat:".2f"}}</td>
+            <td>{{stockpick|current_value|stringformat:".2f"}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><strong>{{portfolio|current_value|stringformat:".2f"}}</strong></td>
+        </tr>
+    </table>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

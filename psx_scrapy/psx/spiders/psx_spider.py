@@ -2,7 +2,7 @@ import scrapy
 from datetime import datetime
 import os
 import csv
-from shutil import copyfile
+import shutil
 
 class PSXSpider(scrapy.Spider):
     name = "psx"

@@ -1,0 +1,9 @@
+{% if portfolio_list %}
+<ul>
+    {% for portfolio in portfolio_list %}
+    <li><a href="portfolio/{{ portfolio.id }}">{{ portfolio }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
