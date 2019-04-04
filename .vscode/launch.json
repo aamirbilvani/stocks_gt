@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "scrapy",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/psx",
+            "cwd": "${workspaceFolder}/psx_scrapy",
             "args": [
                 "crawl",
                 "psx"

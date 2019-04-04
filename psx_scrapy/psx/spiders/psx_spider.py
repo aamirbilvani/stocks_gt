@@ -1,8 +1,8 @@
 import scrapy
-import openpyxl
 from datetime import datetime
 import os
 import csv
+from shutil import copyfile
 
 class PSXSpider(scrapy.Spider):
     name = "psx"
@@ -16,72 +16,54 @@ class PSXSpider(scrapy.Spider):
             current_date.hour >= 10 and current_date.hour <= 14 or \
             (current_date.hour == 15 and current_date.minute <= 35):
 
-            path = '../data/{:04d}_{:02d}_{:02d}.xlsx'.format(current_date.year, current_date.month, current_date.day)
-            # xtra_path = '../data/symbols.csv'
+            path = '../data/{:04d}_{:02d}_{:02d}.csv'.format(current_date.year, current_date.month, current_date.day)
 
-            if os.path.isfile(path):
-                wb = openpyxl.load_workbook(path)
-                ws = wb.active
-            else:
-                wb = openpyxl.Workbook()
-                ws = wb.active
-                ws['A1'] = 'symbol'
+            if not os.path.isfile(path):
+                with open(path, 'w', newline='') as data_file, \
+                     open('../data/symbols.txt', 'r') as symbols_file:
+                    symbols_list = list(csv.reader(symbols_file))
+                    header_row = ['symbol']
+                    for row in symbols_list:
+                        header_row.append(row[0])
+                    data_writer = csv.writer(data_file)
+                    data_writer.writerow(header_row)
 
             urls = []
+            with open('../data/symbols.txt', 'r') as symbols_file:
+                symbols_list = list(csv.reader(symbols_file))
+                for row in symbols_list:
+                    urls.append(row[1])
 
-            with open('urls.txt', 'r') as urls_file:
-                for line in urls_file:
-                    urls.append(line.strip())
+            with open(path, 'r+', newline='') as data_file:
+                data_list = list(csv.reader(data_file))
+                data_writer = csv.writer(data_file)
 
-            row_num = 0
-            timestamp = '{:02d}:{:02d}'.format(current_date.hour, current_date.minute)
-            if str(ws.cell(ws.max_row, 1).value).strip() == timestamp:
-                row_num = ws.max_row
-            elif str(ws.cell(ws.max_row, 1).value).strip() == '':
-                row_num = ws.max_row
-                ws.cell(row_num, 1).value = timestamp
-            else:
-                row_num = ws.max_row + 1
-                ws.cell(row_num, 1).value = timestamp
+                timestamp = '{:02d}:{:02d}'.format(current_date.hour, current_date.minute)
+                new_row = [timestamp]
+                new_row.extend([''] * (len(data_list[0]) - 1))
+                data_writer.writerow(new_row)
 
             for url in urls:
                 request = scrapy.Request(url=url, callback=self.parse)
-                request.meta['workbook'] = wb
-                request.meta['row_num'] = row_num
                 request.meta['path'] = path
-                # request.meta['xtra_path'] = xtra_path
                 yield request
 
     def parse(self, response):
-        wb = response.meta['workbook']
-        row_num = response.meta['row_num']
         path = response.meta['path']
-        xtra_path = response.meta['xtra_path']
-        ws = wb.active
-
-        # with open(xtra_path, 'a') as symbols:
-        #     symbols_csv = csv.writer(symbols)
+        with open(path, 'r') as data_file:
+            data_list = list(csv.reader(data_file))
 
         symbol = response.css('div.pageHeader__title::text').extract_first()
         stock_value = response.css('div.quote__close::text').extract_first()[3:]
 
-        # symbols_row = [symbol, response.url]
-        # symbols_row.append(response.css('div.quote__name::text').extract_first())
-        # symbols_csv.writerow(symbols_row)
-
-        col_num = 0
-        for i in range(1, ws.max_column + 1):
-            col_symbol = str(ws.cell(1, i).value).strip()
+        header_row = data_list[0]
+        data_row = data_list[-1]
+        for i in range(0, len(header_row)):
+            col_symbol = str(header_row[i]).strip()
             if col_symbol == symbol:
-                col_num = i
-                ws.cell(row_num, i).value = float(stock_value.replace(',',''))
-                wb.save(path)
-                break
-        
-        if col_num == 0:
-            col_num = ws.max_column + 1
-            ws.cell(1, col_num).value = symbol
-            ws.cell(row_num, col_num).value = float(stock_value.replace(',',''))
-            wb.save(path)
+                data_row[i] = float(stock_value.replace(',',''))
+                break    
 
-                
+        with open(path, 'r+', newline='') as data_file:
+            data_writer = csv.writer(data_file)
+            data_writer.writerows(data_list)
