@@ -2,3 +2,4 @@
 .vscode/settings.json
 psx_scrapy/launchd_out
 data/*.csv
+portfolio_site/db.sqlite3
