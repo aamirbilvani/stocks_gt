@@ -4,7 +4,3 @@ psx_scrapy/launchd_out
 data/*.csv
 portfolio_site/db.sqlite3
 *.zip
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
