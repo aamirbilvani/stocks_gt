@@ -26,6 +26,7 @@ SECRET_KEY = 'a@6$^#s#4ayvpk6(!l%3r$1azc^&yhus@myxszs8#5k63n!rn*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     '13.233.90.92',
     'ec2-13-233-90-92.ap-south-1.compute.amazonaws.com'
 ]
@@ -122,6 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 LOGIN_REDIRECT_URL = '/portfolio_app/'
 LOGOUT_REDIRECT_URL = '/portfolio_app/'
