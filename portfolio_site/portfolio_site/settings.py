@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '13.233.90.92',
-    'ec2-13-233-90-92.ap-south-1.compute.amazonaws.com'
+    'gt-stocks.info',
+    'www.gt-stocks.info',
+    '13.126.111.61',
 ]
 
 
