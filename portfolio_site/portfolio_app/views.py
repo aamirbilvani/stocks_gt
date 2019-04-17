@@ -12,7 +12,7 @@ def index(request):
         }
         return render(request, 'portfolio_app/index.html', context)
     else:
-        return HttpResponseRedirect('/portfolio_app/login')    
+        return HttpResponseRedirect('/login')    
     
     # portfolio_list = Portfolio.objects.all()
     # context = {

@@ -5,3 +5,5 @@ data/*.csv
 portfolio_site/db.sqlite3
 *.zip
 portfolio_site/static/*
+*.env
+Pipfile.lock

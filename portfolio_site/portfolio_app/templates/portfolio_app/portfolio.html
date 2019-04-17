@@ -4,17 +4,27 @@
         <tr>
             <th>SYMBOL</th>
             <th>Name</th>
-            <th>Quantity</th>
-            <th>Stock Value</th>
-            <th>Total</th>
+            <th>Current Price</th>
+            <th>Avg Cost</th>
+            <th># Shares</th>
+            <th>Market Value</th>
+            <th>Day's P/L</th>
+            <th>Day's P/L (%)</th>
+            <th>Total P/L</th>
+            <th>Total P/L (%)</th>
         </tr>
         {% for stockpick in portfolio.stockpicks.all %}
         <tr>
             <td>{{stockpick.stock.symbol}}</td>
             <td>{{stockpick.stock.name}}</td>
-            <td>{{stockpick.quantity}}</td>
             <td>{{stockpick.stock|current_value|stringformat:".2f"}}</td>
+            <td>{{stockpick.value_per_share|stringformat:".2f"}}</td>
+            <td>{{stockpick.quantity}}</td>
             <td>{{stockpick|current_value|stringformat:".2f"}}</td>
+            <td>{{stockpick|daily_pl|stringformat:".2f"}}</td>
+            <td>{{stockpick|daily_pl_percent|stringformat:".2f"}}%</td>
+            <td>{{stockpick|total_pl|stringformat:".2f"}}</td>
+            <td>{{stockpick|total_pl_percent|stringformat:".2f"}}%</td>
         </tr>
         {% endfor %}
         <tr>
@@ -22,7 +32,12 @@
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
             <td><strong>{{portfolio|current_value|stringformat:".2f"}}</strong></td>
+            <td><strong>{{portfolio|daily_pl|stringformat:".2f"}}</strong></td>
+            <td><strong>{{portfolio|daily_pl_percent|stringformat:".2f"}}%</strong></td>
+            <td><strong>{{portfolio|total_pl|stringformat:".2f"}}</strong></td>
+            <td><strong>{{portfolio|total_pl_percent|stringformat:".2f"}}%</strong></td>
         </tr>
     </table>
 {% else %}

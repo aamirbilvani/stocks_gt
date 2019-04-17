@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a@6$^#s#4ayvpk6(!l%3r$1azc^&yhus@myxszs8#5k63n!rn*'
+SECRET_KEY = os.getenv('SECRET_KEY', 'a@6$^#s#4ayvpk6(!l%3r$1azc^&yhus@myxszs8#5k63n!rn*')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -27,8 +30,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'gt-stocks.info',
-    'www.gt-stocks.info',
-    '13.126.111.61',
 ]
 
 # Application definition
@@ -114,9 +115,9 @@ USE_TZ = True
 
 # SSL/HTTPS
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', False)
+SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', False)
+CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', False)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -124,5 +125,5 @@ CSRF_COOKIE_SECURE = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-LOGIN_REDIRECT_URL = '/portfolio_app/'
-LOGOUT_REDIRECT_URL = '/portfolio_app/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

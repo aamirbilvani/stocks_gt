@@ -8,13 +8,19 @@ class PSXSpider(scrapy.Spider):
     name = "psx"
 
     def start_requests(self):
-        current_date = datetime.today()
+        current_date = datetime.now()
+        today924 = current_date.replace(hour=9,minute=24,second=0,microsecond=0)
+        today1536 = current_date.replace(hour=15,minute=36,second=0,microsecond=0)
+        today854 = current_date.replace(hour=8,minute=54,second=0,microsecond=0)
+        today1206 = current_date.replace(hour=12,minute=6,second=0,microsecond=0)
+        today1424 = current_date.replace(hour=14,minute=24,second=0,microsecond=0)
+        today1636 = current_date.replace(hour=16,minute=36,second=0,microsecond=0)
 
         # weekday: 0 = Monday
         # only update between 9.30 and 15.30 on weekdays
-        if current_date.weekday() < 5 and (current_date.hour == 9 and current_date.minute >= 30) or \
-            current_date.hour >= 10 and current_date.hour <= 14 or \
-            (current_date.hour == 15 and current_date.minute <= 35):
+        if (current_date.weekday() < 4 and current_date > today924 and current_date < today1536) or \
+            (current_date.weekday == 4 and (current_date > today854 and current_date < today1206 or \
+                                            current_date > today1424 and current_date < today1636)):
 
             path = '../data/{:04d}_{:02d}_{:02d}.csv'.format(current_date.year, current_date.month, current_date.day)
 
