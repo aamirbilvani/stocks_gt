@@ -19,7 +19,7 @@ class PSXSpider(scrapy.Spider):
         # weekday: 0 = Monday
         # only update between 9.30 and 15.30 on weekdays
         if (current_date.weekday() < 4 and current_date > today924 and current_date < today1536) or \
-            (current_date.weekday == 4 and (current_date > today854 and current_date < today1206 or \
+            (current_date.weekday() == 4 and (current_date > today854 and current_date < today1206 or \
                                             current_date > today1424 and current_date < today1636)):
 
             path = '../data/{:04d}_{:02d}_{:02d}.csv'.format(current_date.year, current_date.month, current_date.day)

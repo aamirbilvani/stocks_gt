@@ -5,7 +5,7 @@ import os
 from django.conf import settings
 
 class Portfolio(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField('Portfolio Name', max_length=50)
     date_added = models.DateTimeField('Date Added', auto_now_add=True)
 
     def __str__(self):
@@ -16,7 +16,7 @@ class Portfolio(models.Model):
         portfolio_value = 0.0
         for stockpick in stockpicks:
             portfolio_value += (stockpick.stock.current_value() * stockpick.quantity)
-        return portfolio_value     
+        return portfolio_value
 
     def daily_pl(self):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)
@@ -79,7 +79,7 @@ class StockPick(models.Model):
     stock = models.ForeignKey(Stock, on_delete=models.PROTECT)
     quantity = models.IntegerField('Quantity')
     value_per_share = models.FloatField('Value per share')
-    date_added = models.DateTimeField('Date Added')
+    date_added = models.DateTimeField('Date Added', auto_now_add=True)
     portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE, related_name='stockpicks')
 
     def __str__(self):
@@ -116,7 +116,7 @@ class StockPick(models.Model):
                     day_begin_value = float(day_begin_value)
                     return day_begin_value * self.quantity
 
-    def daily_pl(self):
+    def daily_pl(self):        
         return self.current_value() - self.day_begin_value()      
     
     def daily_pl_percent(self):

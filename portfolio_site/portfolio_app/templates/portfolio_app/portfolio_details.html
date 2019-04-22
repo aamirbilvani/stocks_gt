@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}
+GT Stocks - Portfolio {{portfolio.name}}
+{% endblock %}
+
+{% block content %}
+{% load stockpick_extras %} 
+{% if portfolio %}
+    <div class="container">
+        <h2>Portfolio: {{portfolio.name}}</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered w-auto">
+                <thead>
+                    <tr>
+                        <th scope="col">SYMBOL</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Current Price</th>
+                        <th scope="col">Avg Cost</th>
+                        <th scope="col"># Shares</th>
+                        <th scope="col">Market Value</th>
+                        <th scope="col">Day's P/L</th>
+                        <th scope="col">Day's P/L (%)</th>
+                        <th scope="col">Total P/L</th>
+                        <th scope="col">Total P/L (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for stockpick in portfolio.stockpicks.all %}
+                        <tr>
+                            <th scope="row">{{stockpick.stock.symbol}}</th>
+                            <td>{{stockpick.stock.name}}</td>
+                            <td>{{stockpick.stock|current_value|stringformat:".2f"}}</td>
+                            <td>{{stockpick.value_per_share|stringformat:".2f"}}</td>
+                            <td>{{stockpick.quantity}}</td>
+                            <td>{{stockpick|current_value|stringformat:".2f"}}</td>
+                            <td>{{stockpick|daily_pl|stringformat:".2f"}}</td>
+                            <td>{{stockpick|daily_pl_percent|stringformat:".2f"}}%</td>
+                            <td>{{stockpick|total_pl|stringformat:".2f"}}</td>
+                            <td>{{stockpick|total_pl_percent|stringformat:".2f"}}%</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{{portfolio|current_value|stringformat:".2f"}}</td>
+                        <td>{{portfolio|daily_pl|stringformat:".2f"}}</td>
+                        <td>{{portfolio|daily_pl_percent|stringformat:".2f"}}%</td>
+                        <td>{{portfolio|total_pl|stringformat:".2f"}}</td>
+                        <td>{{portfolio|total_pl_percent|stringformat:".2f"}}%</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+{% endblock %}
