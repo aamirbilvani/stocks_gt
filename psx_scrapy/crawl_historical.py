@@ -13,29 +13,31 @@ def main():
         symbols_list = list(csv.reader(symbols_file))
         for index, line in enumerate(symbols_list, 1):
             try:
-                time.sleep(1)
                 symbol = line[0]
                 request_path = "https://dps.psx.com.pk/timeseries/eod/" + line[0]
-                r = requests.get(request_path)
-                if r.status_code == requests.codes.OK:
-                    json = r.json()
-                    data = json['data']
-                    if data is not None:
-                        for item in data:
-                            epoch = item[0]
-                            epoch_date = datetime.utcfromtimestamp(int(epoch))
-                            year = epoch_date.year
-                            date_string = epoch_date.strftime('%Y-%m-%d')
-                            price = item[1]
-                            volume = item[2]
-                            
-                            if year not in year_dict:
-                                year_dict[year] = {}
-
-                            if date_string not in year_dict[year]:
-                                year_dict[year][date_string] = {}
+                data_retrieved = False
+                while not data_retrieved:
+                    time.sleep(1)
+                    r = requests.get(request_path)
+                    if r.status_code == requests.codes.OK:
+                        json = r.json()
+                        data = json['data']
+                        if data is not None:
+                            for item in data:
+                                epoch = item[0]
+                                epoch_date = datetime.utcfromtimestamp(int(epoch))
+                                year = epoch_date.year
+                                date_string = epoch_date.strftime('%Y-%m-%d')
+                                price = item[1]
+                                volume = item[2]
                                 
-                            year_dict[year][date_string][symbol] = price
+                                if year not in year_dict:
+                                    year_dict[year] = {}
+
+                                if date_string not in year_dict[year]:
+                                    year_dict[year][date_string] = {}
+                                    
+                                year_dict[year][date_string][symbol] = price
                 
                 print('{:03d} - {} returned {}'.format(index, request_path, r.status_code))
 
