@@ -1,7 +1,9 @@
 *.pyc
 .vscode/settings.json
+.vscode/.ropeproject
 psx_scrapy/launchd_out
 data/*.csv
+data/historical/*.csv
 portfolio_site/db.sqlite3
 *.zip
 portfolio_site/static/*

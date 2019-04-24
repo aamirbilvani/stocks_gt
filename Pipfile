@@ -12,6 +12,7 @@ pylint-django = "*"
 scrapy = "*"
 django = "*"
 python-dotenv = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"

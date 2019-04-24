@@ -38,6 +38,15 @@ class Portfolio(models.Model):
     def total_pl_percent(self):
         return self.total_pl() / self.current_value() * 100
 
+    def ytd_pl(self):
+        stockpicks = StockPick.objects.filter(portfolio_id=self.id)
+        year_begin_value = 0.0
+        for stockpick in stockpicks:
+            year_begin_value += stockpick.year_begin_value()
+        return self.current_value() - year_begin_value
+    
+    def ytd_pl_percent(self):
+        return self.ytd_pl() / self.current_value() * 100
 
 class Stock(models.Model):
     name = models.CharField('Company Name', max_length=255)
@@ -128,3 +137,36 @@ class StockPick(models.Model):
 
     def total_pl_percent(self):
         return self.total_pl() / self.current_value() * 100
+
+    def year_begin_value(self):
+        current_date = datetime.today()
+        year = current_date.year - 1
+        
+        value = ''
+        col_index = -1
+        while year > 2013 and value == '':
+            year_file_path = os.path.join(settings.BASE_DIR, '../data/historical/{:04d}.csv'.format(year))
+            with open(year_file_path) as year_file:
+                year_list = list(csv.reader(year_file))
+                header_row = year_list[0]
+
+                for i in range(len(header_row)):
+                    col_symbol = str(header_row[i]).strip()
+                    if col_symbol == self.stock.symbol:
+                        col_index = i
+                
+                for i in range(len(year_list) - 1, 0, -1):
+                    if year_list[i][col_index]:
+                        value = year_list[i][col_index].strip()
+                        break
+
+            year -= 1
+        
+        year_begin_value = float(value)
+        return year_begin_value * self.quantity
+    
+    def ytd_pl(self):
+        return self.current_value() - self.year_begin_value()
+
+    def ytd_pl_percent(self):
+        return self.ytd_pl() / self.current_value() * 100

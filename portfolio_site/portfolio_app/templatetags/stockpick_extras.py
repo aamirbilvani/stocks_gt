@@ -21,3 +21,11 @@ def total_pl(obj):
 @register.filter
 def total_pl_percent(obj):
     return obj.total_pl_percent()
+
+@register.filter
+def ytd_pl(obj):
+    return obj.ytd_pl()
+
+@register.filter
+def ytd_pl_percent(obj):
+    return obj.ytd_pl_percent()

@@ -2,9 +2,8 @@
 # from django.shortcuts import render, get_object_or_404
 # from django.template import loader
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
-from django.db import transaction
 from .models import Portfolio
-from .forms import *
+from .forms import StockPickFormSet
 
 
 class PortfolioListView(ListView):
@@ -27,28 +26,23 @@ class PortfolioCreateView(CreateView):
         return '/portfolio/' + str(portfolio.id)
 
     def get_context_data(self, **kwargs):
-        data = super(PortfolioCreateView, self).get_context_data(**kwargs)
+        context = super(PortfolioCreateView, self).get_context_data(**kwargs)
         if self.request.POST:
-            data['stockpicks'] = StockPickFormSet(self.request.POST)
+            context['stockpicks'] = StockPickFormSet(self.request.POST)
         else:
-            data['stockpicks'] = StockPickFormSet()
-        return data
+            context['stockpicks'] = StockPickFormSet()
+        return context
 
     def form_valid(self, form):
-        context = self.get_context_data()
-        stockpicks = context['stockpicks']
-        with transaction.atomic():
-            self.object = form.save()
-
-            if stockpicks.is_valid():
-                stockpicks.instance = self.object
-                stockpicks.save()
-                return super(PortfolioCreateView, self).form_valid(form)
-            else:
-                context.update({
-                    'stockpicks': stockpicks
-                })
-                return self.render_to_response(context)
+        context = self.get_context_data(form=form)
+        formset = context['stockpicks']
+        if formset.is_valid():
+            response = super().form_valid(form)
+            formset.instance = self.object
+            formset.save()
+            return response
+        else:
+            return super().form_invalid(form)
 
 class PortfolioEditView(UpdateView):
     model = Portfolio
@@ -69,13 +63,12 @@ class PortfolioEditView(UpdateView):
         return context
 
     def form_valid(self, form):
-        context = self.get_context_data()
-        stockpicks = context['stockpicks']
-        
-        if stockpicks.is_valid():
-            response = super().get_context_data(form=form)
-            stockpicks.instance = self.object
-            stockpicks.save()
-            return super().form_valid(form)
+        context = self.get_context_data(form=form)
+        formset = context['stockpicks']
+        if formset.is_valid():
+            response = super().form_valid(form)
+            formset.instance = self.object
+            formset.save()
+            return response
         else:
             return super().form_invalid(form)

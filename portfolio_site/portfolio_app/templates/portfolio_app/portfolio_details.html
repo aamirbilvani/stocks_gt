@@ -20,6 +20,8 @@ GT Stocks - Portfolio {{portfolio.name}}
                         <th scope="col">Market Value</th>
                         <th scope="col">Day's P/L</th>
                         <th scope="col">Day's P/L (%)</th>
+                        <th scope="col">YTD P/L</th>
+                        <th scope="col">YTD P/L (%)</th>
                         <th scope="col">Total P/L</th>
                         <th scope="col">Total P/L (%)</th>
                     </tr>
@@ -35,6 +37,8 @@ GT Stocks - Portfolio {{portfolio.name}}
                             <td>{{stockpick|current_value|stringformat:".2f"}}</td>
                             <td>{{stockpick|daily_pl|stringformat:".2f"}}</td>
                             <td>{{stockpick|daily_pl_percent|stringformat:".2f"}}%</td>
+                            <td>{{stockpick|ytd_pl|stringformat:".2f"}}</td>
+                            <td>{{stockpick|ytd_pl_percent|stringformat:".2f"}}%</td>
                             <td>{{stockpick|total_pl|stringformat:".2f"}}</td>
                             <td>{{stockpick|total_pl_percent|stringformat:".2f"}}%</td>
                         </tr>
@@ -50,6 +54,8 @@ GT Stocks - Portfolio {{portfolio.name}}
                         <td>{{portfolio|current_value|stringformat:".2f"}}</td>
                         <td>{{portfolio|daily_pl|stringformat:".2f"}}</td>
                         <td>{{portfolio|daily_pl_percent|stringformat:".2f"}}%</td>
+                        <td>{{portfolio|ytd_pl|stringformat:".2f"}}</td>
+                        <td>{{portfolio|ytd_pl_percent|stringformat:".2f"}}%</td>
                         <td>{{portfolio|total_pl|stringformat:".2f"}}</td>
                         <td>{{portfolio|total_pl_percent|stringformat:".2f"}}%</td>
                     </tr>

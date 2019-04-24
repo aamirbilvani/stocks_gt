@@ -1,292 +1,421 @@
-BOP,https://dps.psx.com.pk/company/BOP,The Bank of Punjab
-ASL,https://dps.psx.com.pk/company/ASL,Aisha Steel Mills Limited
-TRG,https://dps.psx.com.pk/company/TRG,TRG Pakistan Limited
-PIBTL,https://dps.psx.com.pk/company/PIBTL,Pakistan International Bulk Terminal
-FCCL,https://dps.psx.com.pk/company/FCCL,Fauji Cement Company Limited
-BIPL,https://dps.psx.com.pk/company/BIPL,BankIslami Pakistan Limited
-KEL,https://dps.psx.com.pk/company/KEL,K-Electric Limited
-PAEL,https://dps.psx.com.pk/company/PAEL,Pak Elektron Limited
-DGKC,https://dps.psx.com.pk/company/DGKC,D.G. Khan Cement Company Limited
-SNGP,https://dps.psx.com.pk/company/SNGP,Sui Northern Gas Pipelines Limited
-MLCF,https://dps.psx.com.pk/company/MLCF,Maple Leaf Cement Factory Limited
-UNITY,https://dps.psx.com.pk/company/UNITY,Unity Foods Limited
-SSGC,https://dps.psx.com.pk/company/SSGC,Sui Southern Gas Company Limited
-STPL,https://dps.psx.com.pk/company/STPL,Siddiqsons Tin Plate Limited
-HUBC,https://dps.psx.com.pk/company/HUBC,The Hub Power Company Limited
-HBL,https://dps.psx.com.pk/company/HBL,Habib Bank Limited
-FFBL,https://dps.psx.com.pk/company/FFBL,Fauji Fertilizer Bin Qasim Limited
-MFL,https://dps.psx.com.pk/company/MFL,Matco Foods Limited
-WTL,https://dps.psx.com.pk/company/WTL,Worldcall Telecom Limited
-POWER,https://dps.psx.com.pk/company/POWER,Power Cement Limited
-NCL,https://dps.psx.com.pk/company/NCL,Nishat Chunian Limited
-DCL,https://dps.psx.com.pk/company/DCL,Dewan Cement Limited
-PPL,https://dps.psx.com.pk/company/PPL,Pakistan Petroleum Limited
-OGDC,https://dps.psx.com.pk/company/OGDC,Oil & Gas Development Company Limited
-KAPCO,https://dps.psx.com.pk/company/KAPCO,Kot Addu Power Company Limited
-BAFL,https://dps.psx.com.pk/company/BAFL,Bank Alfalah Limited
-ISL,https://dps.psx.com.pk/company/ISL,International Steels Limited
-LOTCHEM,https://dps.psx.com.pk/company/LOTCHEM,Lotte Chemical Pakistan Limited
-EPCL,https://dps.psx.com.pk/company/EPCL,Engro Polymer & Chemicals Limited
-FFL,https://dps.psx.com.pk/company/FFL,Fauji Foods Limited
-AVN,https://dps.psx.com.pk/company/AVN,Avanceon Limited
-STCL,https://dps.psx.com.pk/company/STCL,Shabbir Tiles & Ceramics Limited
-ASTL,https://dps.psx.com.pk/company/ASTL,Amreli Steels Limited
-DOL,https://dps.psx.com.pk/company/DOL,Descon Oxychem Limited
-PIOC,https://dps.psx.com.pk/company/PIOC,Pioneer Cement Limited
-UBL,https://dps.psx.com.pk/company/UBL,United Bank Limited
-SEARL,https://dps.psx.com.pk/company/SEARL,The Searle Company Limited
-CHCC,https://dps.psx.com.pk/company/CHCC,Cherat Cement Company Limited
-DSL,https://dps.psx.com.pk/company/DSL,Dost Steels Limited
-SILK,https://dps.psx.com.pk/company/SILK,Silkbank Limited
-NETSOL,https://dps.psx.com.pk/company/NETSOL,NetSol Technologies Limited
-FCSC,https://dps.psx.com.pk/company/FCSC,First Capital Securities Corporation
-SPWL,https://dps.psx.com.pk/company/SPWL,Saif Power Limited
-MEBL,https://dps.psx.com.pk/company/MEBL,Meezan Bank Limited
-LUCK,https://dps.psx.com.pk/company/LUCK,Lucky Cement Limited
-GATM,https://dps.psx.com.pk/company/GATM,Gul Ahmed Textile Mills Limited
-PSMC,https://dps.psx.com.pk/company/PSMC,Pak Suzuki Motor Company Limited
-ATRL,https://dps.psx.com.pk/company/ATRL,Attock Refinery Limited
-PIAA,https://dps.psx.com.pk/company/PIAA,Pakistan International Airlines Corporation Limited
-EFUG,https://dps.psx.com.pk/company/EFUG,EFU General Insurance Limited
-BYCO,https://dps.psx.com.pk/company/BYCO,Byco Petroleum Pakistan Limited
-FATIMA,https://dps.psx.com.pk/company/FATIMA,Fatima Fertilizer Company Limited
-AICL,https://dps.psx.com.pk/company/AICL,Adamjee Insurance Company Limited
-MUGHAL,https://dps.psx.com.pk/company/MUGHAL,Mughal Iron & Steel Industries Limited
-HMB,https://dps.psx.com.pk/company/HMB,Habib Metropolitan Bank Limited
-NRSL,https://dps.psx.com.pk/company/NRSL,Nimir Resins Limited
-INIL,https://dps.psx.com.pk/company/INIL,International Industries Limited
-PREMA,https://dps.psx.com.pk/company/PREMA,At-Tahur Limited
-NCPL,https://dps.psx.com.pk/company/NCPL,Nishat Chunian Power Limited
-NML,https://dps.psx.com.pk/company/NML,Nishat Mills Limited
-ICIBL,https://dps.psx.com.pk/company/ICIBL,Invest Capital Investment Bank Limited
-EFERT,https://dps.psx.com.pk/company/EFERT,Engro Fertilizers Limited
-HCAR,https://dps.psx.com.pk/company/HCAR,Honda Atlas Cars (Pakistan) Limited
-PSO,https://dps.psx.com.pk/company/PSO,Pakistan State Oil Company Limited
-ENGRO,https://dps.psx.com.pk/company/ENGRO,Engro Corporation Limited
-PASL,https://dps.psx.com.pk/company/PASL,Pervez Ahmed Securities Limited
-GTYR,https://dps.psx.com.pk/company/GTYR,The General Tyre & Rubber
-JSBL,https://dps.psx.com.pk/company/JSBL,JS Bank Limited
-BAHL,https://dps.psx.com.pk/company/BAHL,Bank AL Habib Limited
-PACE,https://dps.psx.com.pk/company/PACE,Pace (Pakistan) Limited
-FFC,https://dps.psx.com.pk/company/FFC,Fauji Fertilizer Company Limited
-DCR,https://dps.psx.com.pk/company/DCR,Dolmen City REIT
-DFML,https://dps.psx.com.pk/company/DFML,Dewan Farooque Motors Limited
-MERIT,https://dps.psx.com.pk/company/MERIT,Merit Packaging Limited
-GWLC,https://dps.psx.com.pk/company/GWLC,Gharibwal Cement Limited
-NBP,https://dps.psx.com.pk/company/NBP,National Bank of Pakistan
-PRL,https://dps.psx.com.pk/company/PRL,Pakistan Refinery Limited
+786,https://dps.psx.com.pk/company/786,786 Investments Ltd
+AABS,https://dps.psx.com.pk/company/AABS,AL-Abbas Sugar Mills Ltd
+ABL,https://dps.psx.com.pk/company/ABL,Allied Bank Ltd.
+ABOT,https://dps.psx.com.pk/company/ABOT,Abbott Lab (Pakistan) Ltd. XD
+ACPL,https://dps.psx.com.pk/company/ACPL,Attock Cement Pakistan Ltd.
+ADAMS,https://dps.psx.com.pk/company/ADAMS,Adam Sugar Mills Ltd
+ADMM,https://dps.psx.com.pk/company/ADMM,Artistic Denim Mills Ltd
+ADOS,https://dps.psx.com.pk/company/ADOS,Ados Pakistan Ltd
+AEL,https://dps.psx.com.pk/company/AEL,Arshad Energy Ltd
+AGIC,https://dps.psx.com.pk/company/AGIC,Askari General Insurance Co. XDXB
+AGIL,https://dps.psx.com.pk/company/AGIL,Agriauto Industries Ltd
 AGL,https://dps.psx.com.pk/company/AGL,Agritech Limited
-AKBL,https://dps.psx.com.pk/company/AKBL,Askari Bank Limited
-GHNL,https://dps.psx.com.pk/company/GHNL,Ghandhara Nissan Limited
-EFOODS,https://dps.psx.com.pk/company/EFOODS,Engro Foods Limited
-ANL,https://dps.psx.com.pk/company/ANL,Azgard Nine Limited
-HASCOL,https://dps.psx.com.pk/company/HASCOL,Hascol Petroleum Limited
-JSCL,https://dps.psx.com.pk/company/JSCL,Jahangir Siddiqui & Co. Ltd.
-SKRS,https://dps.psx.com.pk/company/SKRS,Sakrand Sugar Mills Limited
-KOSM,https://dps.psx.com.pk/company/KOSM,Kohinoor Spinning Mills Limited
-NRL,https://dps.psx.com.pk/company/NRL,National Refinery Limited
-CSAP,https://dps.psx.com.pk/company/CSAP,Crescent Steel & Allied Products Limited
-786,https://dps.psx.com.pk/company/786,786 Investments Limited
-MCB,https://dps.psx.com.pk/company/MCB,MCB Bank Limited
-ESBL,https://dps.psx.com.pk/company/ESBL,Escorts Investment Bank Limited
-LPL,https://dps.psx.com.pk/company/LPL,Lalpir Power Limited
-FML,https://dps.psx.com.pk/company/FML,Feroze1888 Mills Limited
-YOUW,https://dps.psx.com.pk/company/YOUW,Yousaf Weaving Mills Limited
-ITTEFAQ,https://dps.psx.com.pk/company/ITTEFAQ,Ittefaq Iron Industries Limited
-GHNI,https://dps.psx.com.pk/company/GHNI,Ghandhara Industries Limited
-DSIL,https://dps.psx.com.pk/company/DSIL,D.S. Industries Limited
-ICI,https://dps.psx.com.pk/company/ICI,ICI Pakistan Limited
-FDIBL,https://dps.psx.com.pk/company/FDIBL,First Dawood Investment Bank Limited
-TREET,https://dps.psx.com.pk/company/TREET,Treet Corporation Limited
-PTC,https://dps.psx.com.pk/company/PTC,Pakistan Telecommunication Company Ltd
-POL,https://dps.psx.com.pk/company/POL,Pakistan Oilfields Limited
-WAVES,https://dps.psx.com.pk/company/WAVES,Waves Singer Pakistan Limited
-SHEL,https://dps.psx.com.pk/company/SHEL,Shell Pakistan Limited
-UNIC,https://dps.psx.com.pk/company/UNIC,The United Insurance Company
 AGP,https://dps.psx.com.pk/company/AGP,AGP Limited
-LOADS,https://dps.psx.com.pk/company/LOADS,Loads Limited
-TRIPF,https://dps.psx.com.pk/company/TRIPF,Tri-Pack Films Limited
-TRPOL,https://dps.psx.com.pk/company/TRPOL,Tri-Star Polyester Limited
-SMBL,https://dps.psx.com.pk/company/SMBL,Summit Bank Limited
-ASC,https://dps.psx.com.pk/company/ASC,Al Shaheer Corporation Limited
-TPL,https://dps.psx.com.pk/company/TPL,TPL Corp Limited
-SPL,https://dps.psx.com.pk/company/SPL,Sitara Peroxide Limited
-KOHC,https://dps.psx.com.pk/company/KOHC,Kohat Cement Company Limited
-HINOON,https://dps.psx.com.pk/company/HINOON,Highnoon Laboratories Limited
-CSIL,https://dps.psx.com.pk/company/CSIL,Crescent Star Insurance Limited
-AGSML,https://dps.psx.com.pk/company/AGSML,Abdullah Shah Ghazi Sugar Mills Limited
-OLPL,https://dps.psx.com.pk/company/OLPL,Orix Leasing Pakistan Limited
-FABL,https://dps.psx.com.pk/company/FABL,Faysal Bank Limited
-TELE,https://dps.psx.com.pk/company/TELE,Telecard Limited
-HTL,https://dps.psx.com.pk/company/HTL,Hi-Tech Lubricants Limited
-SHSML,https://dps.psx.com.pk/company/SHSML,Shahmurad Sugar Mills Limited
-MTL,https://dps.psx.com.pk/company/MTL,Millat Tractors Limited
-AMTEX,https://dps.psx.com.pk/company/AMTEX,Amtex Limited
-DWSM,https://dps.psx.com.pk/company/DWSM,Dewan Sugar Mills Limited
-PKGS,https://dps.psx.com.pk/company/PKGS,Packages Limited
-SARC,https://dps.psx.com.pk/company/SARC,Sardar Chemical Industries Limited
-PKGP,https://dps.psx.com.pk/company/PKGP,Pakgen Power Limited
-FNEL,https://dps.psx.com.pk/company/FNEL,First National Equities Limited
-GASF,https://dps.psx.com.pk/company/GASF,Golden Arrow Selected Stocks
-ACPL,https://dps.psx.com.pk/company/ACPL,Attock Cement Pakistan Limited
-DKL,https://dps.psx.com.pk/company/DKL,Drekkar Kingsway Limited
-ABL,https://dps.psx.com.pk/company/ABL,Allied Bank Limited
-PSX,https://dps.psx.com.pk/company/PSX,Pakistan Stock Exchange Limited
+AGSML,https://dps.psx.com.pk/company/AGSML,Abdullah Shah Ghazi Sugar
+AGTL,https://dps.psx.com.pk/company/AGTL,Al-Ghazi Tractors Ltd XD
+AHCL,https://dps.psx.com.pk/company/AHCL,Arif Habib Corporation Ltd
 AHL,https://dps.psx.com.pk/company/AHL,Arif Habib Limited
-FEROZ,https://dps.psx.com.pk/company/FEROZ,Ferozsons Laboratories Limited
-THCCL,https://dps.psx.com.pk/company/THCCL,Thatta Cement Company Limited
-AKZO,https://dps.psx.com.pk/company/AKZO,Akzo Nobel Pakistan Limited
-GAIL,https://dps.psx.com.pk/company/GAIL,Ghani Automobile Industries Limited
-BERG,https://dps.psx.com.pk/company/BERG,Berger Paints Pakistan Limited
-AGIC,https://dps.psx.com.pk/company/AGIC,Askari General Insurance Company Limited
-SHFA,https://dps.psx.com.pk/company/SHFA,Shifa International Hospitals Limited
-SAZEW,https://dps.psx.com.pk/company/SAZEW,Sazgar Engineering Works Limited
-FANM,https://dps.psx.com.pk/company/FANM,First Al-Noor Modaraba
-EFUL,https://dps.psx.com.pk/company/EFUL,EFU Life Assurance Limited
-NPL,https://dps.psx.com.pk/company/NPL,Nishat Power Limited
-QUICE,https://dps.psx.com.pk/company/QUICE,Quice Food Industries Limited
-EPQL,https://dps.psx.com.pk/company/EPQL,Engro Powergen Qadirpur Limited
-ZIL,https://dps.psx.com.pk/company/ZIL,ZIL Limited
-PMI,https://dps.psx.com.pk/company/PMI,First Prudential Modaraba
-GSKCH,https://dps.psx.com.pk/company/GSKCH,GlaxoSmithKline Consumer Healthcare
-RICL,https://dps.psx.com.pk/company/RICL,Reliance Insurance Company Limited
-BAPL,https://dps.psx.com.pk/company/BAPL,Bawany Air Products Limited
-CLOV,https://dps.psx.com.pk/company/CLOV,Clover Pakistan Limited
-MDTL,https://dps.psx.com.pk/company/MDTL,Media Times Limited
-BUXL,https://dps.psx.com.pk/company/BUXL,Buxly Paints Limited
-CRTM,https://dps.psx.com.pk/company/CRTM,The Crescent Textile Mills Limited
-BWCL,https://dps.psx.com.pk/company/BWCL,Bestway Cement Limited
-GLAXO,https://dps.psx.com.pk/company/GLAXO,GlaxoSmithKline Pakistan Limited
-GGGL,https://dps.psx.com.pk/company/GGGL,Ghani Global Glass Limited
-ABOT,https://dps.psx.com.pk/company/ABOT,Abbott Laboratories (Pakistan) Limited
-SJTM,https://dps.psx.com.pk/company/SJTM,Sajjad Textile Mills Limited
-TPLP,https://dps.psx.com.pk/company/TPLP,TPL Properties Limited
-DAWH,https://dps.psx.com.pk/company/DAWH,Dawood Hercules Corporation Limited
-DYNO,https://dps.psx.com.pk/company/DYNO,Dynea Pakistan Limited
-SPEL,https://dps.psx.com.pk/company/SPEL,Synthetic Products Enterprises Limited
-ATIL,https://dps.psx.com.pk/company/ATIL,Atlas Insurance Limited
-HSM,https://dps.psx.com.pk/company/HSM,Husein Sugar Mills Limited
-JUBS,https://dps.psx.com.pk/company/JUBS,Jubilee Spinning & Weaving Mills Ltd.
-CPPL,https://dps.psx.com.pk/company/CPPL,Cherat Packaging Limited
-KHSM,https://dps.psx.com.pk/company/KHSM,Khurshid Spinning Mills Limited
-PRWM,https://dps.psx.com.pk/company/PRWM,Prosperity Weaving Mills Limited
-TGL,https://dps.psx.com.pk/company/TGL,Tariq Glass Industries Limited
-HUMNL,https://dps.psx.com.pk/company/HUMNL,Hum Network Limited
-GHGL,https://dps.psx.com.pk/company/GHGL,Ghani Glass Limited
-TSPL,https://dps.psx.com.pk/company/TSPL,Tri-Star Power Limited
-SNBL,https://dps.psx.com.pk/company/SNBL,Soneri Bank Limited
-MARI,https://dps.psx.com.pk/company/MARI,Mari Petroleum Company Limited
-HIRAT,https://dps.psx.com.pk/company/HIRAT,Hira Textile Mills Limited
-PAKD,https://dps.psx.com.pk/company/PAKD,Pak Datacom Limited
-IBLHL,https://dps.psx.com.pk/company/IBLHL,IBL HealthCare Limited
-DFSM,https://dps.psx.com.pk/company/DFSM,Dewan Farooque Spinning Mills Limited
-JVDC,https://dps.psx.com.pk/company/JVDC,Javedan Corporation Limited
-EMCO,https://dps.psx.com.pk/company/EMCO,Emco Industries Limited
-AHCL,https://dps.psx.com.pk/company/AHCL,Arif Habib Corporation Limited
-NICL,https://dps.psx.com.pk/company/NICL,Nimir Industrial Chemicals Limited
-JOPP,https://dps.psx.com.pk/company/JOPP,Johnson & Phillips (Pakistan) Limited
-SERF,https://dps.psx.com.pk/company/SERF,Service Fabrics Limited
-IGIHL,https://dps.psx.com.pk/company/IGIHL,IGI Holdings Limited
-ATBA,https://dps.psx.com.pk/company/ATBA,Atlas Battery Limited
-SHJS,https://dps.psx.com.pk/company/SHJS,Shahtaj Sugar Mills Limited
-AMBL,https://dps.psx.com.pk/company/AMBL,Apna Microfinance Bank Limited
-GGL,https://dps.psx.com.pk/company/GGL,Ghani Gases Limited
-SYS,https://dps.psx.com.pk/company/SYS,Systems Limited
-BILF,https://dps.psx.com.pk/company/BILF,Bilal Fibres Limited
-KOHP,https://dps.psx.com.pk/company/KOHP,Kohinoor Power Company Limited
-SSML,https://dps.psx.com.pk/company/SSML,Saritow Spinning Mills Limited
-INDU,https://dps.psx.com.pk/company/INDU,Indus Motor Company Limited
-RPL,https://dps.psx.com.pk/company/RPL,Roshan Packages Limited
-NATF,https://dps.psx.com.pk/company/NATF,National Foods Limited
-PKGI,https://dps.psx.com.pk/company/PKGI,The Pakistan General Insurance Company Limited
-FUDLM,https://dps.psx.com.pk/company/FUDLM,First UDL Modaraba
-MRNS,https://dps.psx.com.pk/company/MRNS,Mehran Sugar Mills Limited
-SEPL,https://dps.psx.com.pk/company/SEPL,Security Papers Limited
-REWM,https://dps.psx.com.pk/company/REWM,Reliance Weaving Mills Limited
-ADMM,https://dps.psx.com.pk/company/ADMM,Artistic Denim Mills Limited
-UBDL,https://dps.psx.com.pk/company/UBDL,United Brands Limited
-PAKRI,https://dps.psx.com.pk/company/PAKRI,Pakistan Reinsurance Company Limited
-SERT,https://dps.psx.com.pk/company/SERT,Service Industries Textiles Limited
-FCIBL,https://dps.psx.com.pk/company/FCIBL,First Credit and Investment Bank Limited
-KTML,https://dps.psx.com.pk/company/KTML,Kohinoor Textile Mills Limited
-KSBP,https://dps.psx.com.pk/company/KSBP,KSB Pumps Company Limited
-THALL,https://dps.psx.com.pk/company/THALL,Thal Limited
-ANSM,https://dps.psx.com.pk/company/ANSM,Ansari Sugar Mills Limited
-CEPB,https://dps.psx.com.pk/company/CEPB,Century Paper & Board Mills Limited
-CTM,https://dps.psx.com.pk/company/CTM,Colony Textile Mills Limited
-SFAT,https://dps.psx.com.pk/company/SFAT,Safa Textiles Limited
-ADAMS,https://dps.psx.com.pk/company/ADAMS,Adam Sugar Mills Limited
-GFIL,https://dps.psx.com.pk/company/GFIL,Ghazi Fabrics International Limited
-PIL,https://dps.psx.com.pk/company/PIL,PICIC Insurance Limited
-ALTN,https://dps.psx.com.pk/company/ALTN,Altern Energy Limited
-IMSL,https://dps.psx.com.pk/company/IMSL,Imperial Sugar Limited
-PPVC,https://dps.psx.com.pk/company/PPVC,Pakistan PVC Limited
-BRR,https://dps.psx.com.pk/company/BRR,B.R.R. Guardian Modaraba
-HWQS,https://dps.psx.com.pk/company/HWQS,Haseeb Waqas Sugar Mills Limited
-PAKMI,https://dps.psx.com.pk/company/PAKMI,First Pak Modaraba
-GVGL,https://dps.psx.com.pk/company/GVGL,Ghani Value Glass Limited
-MSOT,https://dps.psx.com.pk/company/MSOT,Masood Textile Mills Limited
-CYAN,https://dps.psx.com.pk/company/CYAN,Cyan Limited
-BCL,https://dps.psx.com.pk/company/BCL,Bolan Castings Limited
-BPL,https://dps.psx.com.pk/company/BPL,Burshane LPG (Pakistan) Limited
-ICL,https://dps.psx.com.pk/company/ICL,Ittehad Chemicals Limted
-BGL,https://dps.psx.com.pk/company/BGL,Balochistan Glass Limited
-KOIL,https://dps.psx.com.pk/company/KOIL,Kohinoor Industries Limited
-DKTM,https://dps.psx.com.pk/company/DKTM,Dewan Khalid Textile Mills Limited
+AHTM,https://dps.psx.com.pk/company/AHTM,Ahmad Hassan Textile Mills Ltd
+AICL,https://dps.psx.com.pk/company/AICL,Adamjee Insurance Co. Ltd. XD
+AKBL,https://dps.psx.com.pk/company/AKBL,Askari Bank Ltd.
+AKDCL,https://dps.psx.com.pk/company/AKDCL,AKD Capital Limited
+AKGL,https://dps.psx.com.pk/company/AKGL,AL-Khair Gadoon Ltd
+AKZO,https://dps.psx.com.pk/company/AKZO,AkzoNobel Pakistan
+ALAC,https://dps.psx.com.pk/company/ALAC,Askari Life Assurance Co.
+ALNRS,https://dps.psx.com.pk/company/ALNRS,AL-Noor Sugar Mills Ltd
+ALTN,https://dps.psx.com.pk/company/ALTN,Altern Energy Ltd
+AMBL,https://dps.psx.com.pk/company/AMBL,Apna Microfinance Bank Ltd
+ANL,https://dps.psx.com.pk/company/ANL,Azgard Nine Ltd
+APL,https://dps.psx.com.pk/company/APL,Attock Petroleum Ltd
+ARM,https://dps.psx.com.pk/company/ARM,Allied Rental Modaraba
+ARPAK,https://dps.psx.com.pk/company/ARPAK,Arpak International Investments
+ARPL,https://dps.psx.com.pk/company/ARPL,Archroma Pakistan Ltd
+ARUJ,https://dps.psx.com.pk/company/ARUJ,Aruj Industries Ltd
+ASC,https://dps.psx.com.pk/company/ASC,Al Shaheer Corporation Ltd
+ASHT,https://dps.psx.com.pk/company/ASHT,Ashfaq Textile Mills Ltd
+ASIC,https://dps.psx.com.pk/company/ASIC,Asia Insurance Co. Ltd.
+ASL,https://dps.psx.com.pk/company/ASL,Aisha Steel Ltd
+ASTL,https://dps.psx.com.pk/company/ASTL,Amreli Steels Ltd
+ATBA,https://dps.psx.com.pk/company/ATBA,Atlas Battery Ltd
+ATIL,https://dps.psx.com.pk/company/ATIL,Atlas Insurance Ltd XDXB
+ATLH,https://dps.psx.com.pk/company/ATLH,Atlas Honda Ltd
+ATRL,https://dps.psx.com.pk/company/ATRL,Attock Refinery Ltd
+AVN,https://dps.psx.com.pk/company/AVN,Avanceon Limited XB
+AWTX,https://dps.psx.com.pk/company/AWTX,Allawasaya Textile Mills Ltd
+AWWAL,https://dps.psx.com.pk/company/AWWAL,Awwal Modaraba
+BAFL,https://dps.psx.com.pk/company/BAFL,Bank Alfalah Ltd.
+BAFS,https://dps.psx.com.pk/company/BAFS,Baba Farid Sugar Mills Ltd
+BAHL,https://dps.psx.com.pk/company/BAHL,Bank Al Habib Ltd.
+BATA,https://dps.psx.com.pk/company/BATA,Bata (Pakistan) Ltd. XD
+BCL,https://dps.psx.com.pk/company/BCL,Bolan Castings Ltd
+BCML,https://dps.psx.com.pk/company/BCML,Babri Cotton Mills Ltd
+BERG,https://dps.psx.com.pk/company/BERG,Berger Paints Pakistan Ltd
+BFMOD,https://dps.psx.com.pk/company/BFMOD,B.F. Modaraba
+BGL,https://dps.psx.com.pk/company/BGL,Balochistan Glass Ltd
+BHAT,https://dps.psx.com.pk/company/BHAT,Bhanero Textile Mills Ltd
+BIFO,https://dps.psx.com.pk/company/BIFO,Biafo Industries Ltd
+BIPL,https://dps.psx.com.pk/company/BIPL,BankIslami Pakistan Ltd.
 BIPLS,https://dps.psx.com.pk/company/BIPLS,BIPL Securities Limited
-AGTL,https://dps.psx.com.pk/company/AGTL,Al-Ghazi Tractors Limited
-HSPI,https://dps.psx.com.pk/company/HSPI,Huffaz Seamless Pipe Industries Limited
-HINO,https://dps.psx.com.pk/company/HINO,Hinopak Motors Limited
-ZAHID,https://dps.psx.com.pk/company/ZAHID,Zahidjee Textile Mills Limited
-AGIL,https://dps.psx.com.pk/company/AGIL,Agriauto Industries Limited
-DWTM,https://dps.psx.com.pk/company/DWTM,Dewan Textile Mills Limited
-IBFL,https://dps.psx.com.pk/company/IBFL,Ibrahim Fibres Limited
-ECOP,https://dps.psx.com.pk/company/ECOP,Ecopack Limited
-ADOS,https://dps.psx.com.pk/company/ADOS,Ados Pakistan Limited
-SLCL,https://dps.psx.com.pk/company/SLCL,Security Leasing Corporation Limited
-WYETH,https://dps.psx.com.pk/company/WYETH,Wyeth Pakistan Limited
-PSYL,https://dps.psx.com.pk/company/PSYL,Pakistan Synthetics Limited
-BIFO,https://dps.psx.com.pk/company/BIFO,Biafo Industries Limited
-JLICL,https://dps.psx.com.pk/company/JLICL,Jubilee Life Insurance Company Limited
-APL,https://dps.psx.com.pk/company/APL,Attock Petroleum Limited
-CWSM,https://dps.psx.com.pk/company/CWSM,Chakwal Spinning Mills Limited
+BNWM,https://dps.psx.com.pk/company/BNWM,Bannu Woollen Mills Ltd
+BOK,https://dps.psx.com.pk/company/BOK,Bank of Khyber
+BOP,https://dps.psx.com.pk/company/BOP,Bank of Punjab
+BPL,https://dps.psx.com.pk/company/BPL,Burshane LPG (Pakistan)
+BRR,https://dps.psx.com.pk/company/BRR,B.R.R. Guardian Modaraba
+BTL,https://dps.psx.com.pk/company/BTL,Blessed Textiles Limited
+BUXL,https://dps.psx.com.pk/company/BUXL,Buxly Paints Ltd
+BWCL,https://dps.psx.com.pk/company/BWCL,Bestway Cement Ltd
+BWHL,https://dps.psx.com.pk/company/BWHL,Baluchistan Wheels Ltd
+BYCO,https://dps.psx.com.pk/company/BYCO,Byco Petroleum Pakistan Ltd
+CCM,https://dps.psx.com.pk/company/CCM,Crescent Cotton Mills Ltd
+CENI,https://dps.psx.com.pk/company/CENI,Century Insurance Co. Ltd. XD
+CEPB,https://dps.psx.com.pk/company/CEPB,Century Paper & Board Mills
+CFL,https://dps.psx.com.pk/company/CFL,Crescent Fibres Ltd
+CHAS,https://dps.psx.com.pk/company/CHAS,Chashma Sugar Mills Ltd XD
+CHCC,https://dps.psx.com.pk/company/CHCC,Cherat Cement Co. Ltd.
+CLOV,https://dps.psx.com.pk/company/CLOV,Clover Pakistan Ltd
+COLG,https://dps.psx.com.pk/company/COLG,Colgate-Palmolive (Pakistan)
+CPPL,https://dps.psx.com.pk/company/CPPL,Cherat Packaging Ltd
+CRTM,https://dps.psx.com.pk/company/CRTM,Crescent Textile Mills Ltd
+CSAP,https://dps.psx.com.pk/company/CSAP,Crescent Steel & Allied Products
+CSIL,https://dps.psx.com.pk/company/CSIL,Crescent Star Insurance Ltd
+CSM,https://dps.psx.com.pk/company/CSM,Crescent Standard Modaraba
+CTM,https://dps.psx.com.pk/company/CTM,Colony Textile Mills Ltd
+CWSM,https://dps.psx.com.pk/company/CWSM,Chakwal Spinning Mills Ltd
+CYAN,https://dps.psx.com.pk/company/CYAN,Cyan Limited
+DAAG,https://dps.psx.com.pk/company/DAAG,Data Agro Ltd
+DADX,https://dps.psx.com.pk/company/DADX,Dadex Eternit Ltd
+DAWH,https://dps.psx.com.pk/company/DAWH,Dawood Hercules Corporation XD
+DCL,https://dps.psx.com.pk/company/DCL,Dewan Cement Ltd.
+DCR,https://dps.psx.com.pk/company/DCR,Dolmen City REIT
+DEL,https://dps.psx.com.pk/company/DEL,Dawood Equities Ltd
+DFSM,https://dps.psx.com.pk/company/DFSM,Dewan Farooque Spinning
+DGKC,https://dps.psx.com.pk/company/DGKC,D.G. Khan Cement Co. Ltd.
+DINT,https://dps.psx.com.pk/company/DINT,Din Textile Mills Ltd
+DLL,https://dps.psx.com.pk/company/DLL,Dawood Lawrencepur Ltd. XD
+DNCC,https://dps.psx.com.pk/company/DNCC,Dandot Cement Co. Ltd.
+DOL,https://dps.psx.com.pk/company/DOL,Descon Oxychem Ltd
+DSIL,https://dps.psx.com.pk/company/DSIL,D. S. Industries Ltd
+DSL,https://dps.psx.com.pk/company/DSL,Dost Steels Ltd
+DYNO,https://dps.psx.com.pk/company/DYNO,Dynea Pakistan Ltd
+ECOP,https://dps.psx.com.pk/company/ECOP,EcoPack Ltd.
+EFERT,https://dps.psx.com.pk/company/EFERT,Engro Fertilizers Ltd.
+EFGH,https://dps.psx.com.pk/company/EFGH,EFG Hermes Pakistan
+EFOODS,https://dps.psx.com.pk/company/EFOODS,Engro Foods Ltd
+EFUG,https://dps.psx.com.pk/company/EFUG,EFU General Insurance Ltd.
+EFUL,https://dps.psx.com.pk/company/EFUL,EFU Life Assurance Ltd
+ELCM,https://dps.psx.com.pk/company/ELCM,Elahi Cotton Mills Ltd
+ELSM,https://dps.psx.com.pk/company/ELSM,Ellcot Spinning Mills Ltd
+EMCO,https://dps.psx.com.pk/company/EMCO,Emco Industries Ltd
+ENGRO,https://dps.psx.com.pk/company/ENGRO,Engro Corporation Ltd
+EPCL,https://dps.psx.com.pk/company/EPCL,Engro Polymer & Chemicals XD
+EPQL,https://dps.psx.com.pk/company/EPQL,Engro Powergen Qadirpur Ltd
+ESBL,https://dps.psx.com.pk/company/ESBL,Escorts Investment  Bank Ltd
+EWIC,https://dps.psx.com.pk/company/EWIC,East West Insurance Co.
+EXIDE,https://dps.psx.com.pk/company/EXIDE,Exide Pakistan Ltd
+FABL,https://dps.psx.com.pk/company/FABL,Faysal Bank Ltd.
+FANM,https://dps.psx.com.pk/company/FANM,AL-Noor Modaraba 1st
+FATIMA,https://dps.psx.com.pk/company/FATIMA,Fatima Fertilizer Company Ltd XD
+FCCL,https://dps.psx.com.pk/company/FCCL,Fauji Cement Co. Ltd.
+FCEL,https://dps.psx.com.pk/company/FCEL,First Capital Equities Ltd
+FCIBL,https://dps.psx.com.pk/company/FCIBL,First Credit & Investment Bank Ltd
+FCONM,https://dps.psx.com.pk/company/FCONM,Constellation Modaraba 1st
+FCSC,https://dps.psx.com.pk/company/FCSC,First Capital Securities Corp. Ltd
+FDIBL,https://dps.psx.com.pk/company/FDIBL,First Dawood Investment Bank Ltd
+FECM,https://dps.psx.com.pk/company/FECM,Elite Capital Modaraba 1st
+FECTC,https://dps.psx.com.pk/company/FECTC,Fecto Cement Ltd
+FEM,https://dps.psx.com.pk/company/FEM,Equity Modaraba 1st
+FEROZ,https://dps.psx.com.pk/company/FEROZ,Ferozsons Laboratories Ltd
+FFBL,https://dps.psx.com.pk/company/FFBL,Fauji Fertilizer Bin Qasim Ltd
+FFC,https://dps.psx.com.pk/company/FFC,Fauij Fertilizer Company Ltd
+FFL,https://dps.psx.com.pk/company/FFL,Fauji Foods Limited
+FFLM,https://dps.psx.com.pk/company/FFLM,First Fidelity Leasing Modaraba
+FHAM,https://dps.psx.com.pk/company/FHAM,Habib Modaraba 1st
+FIBLM,https://dps.psx.com.pk/company/FIBLM,IBL Modaraba 1st
+FIMM,https://dps.psx.com.pk/company/FIMM,Imrooz Modaraba 1st
+FLYNG,https://dps.psx.com.pk/company/FLYNG,Flying Cement Co. Ltd.
+FML,https://dps.psx.com.pk/company/FML,Feroze1888 Mills Ltd
+FNEL,https://dps.psx.com.pk/company/FNEL,First National Equities Ltd
+FPJM,https://dps.psx.com.pk/company/FPJM,Punjab Modaraba 1st
+FPRM,https://dps.psx.com.pk/company/FPRM,Paramount Modaraba 1st
+FRCL,https://dps.psx.com.pk/company/FRCL,Frontier Ceramics Ltd
+FRSM,https://dps.psx.com.pk/company/FRSM,Faran Sugar Mills Ltd
+FTMM,https://dps.psx.com.pk/company/FTMM,First Treet Mfg Modaraba
+FTSM,https://dps.psx.com.pk/company/FTSM,Tri-Star Modaraba 1st
+FUDLM,https://dps.psx.com.pk/company/FUDLM,U.D.L. Modaraba 1st
+FZCM,https://dps.psx.com.pk/company/FZCM,Fazal Cloth Mills Ltd
+GADT,https://dps.psx.com.pk/company/GADT,Gadoon Textile Mills Ltd
+GAIL,https://dps.psx.com.pk/company/GAIL,Ghani Automobile Industries
+GAMON,https://dps.psx.com.pk/company/GAMON,Gammon Pakistan Ltd
+GASF,https://dps.psx.com.pk/company/GASF,Golden Arrow Selected Stocks Fund
+GATI,https://dps.psx.com.pk/company/GATI,Gatron (Industries) Ltd
+GATM,https://dps.psx.com.pk/company/GATM,Gul Ahmed Textile Mills Ltd
+GFIL,https://dps.psx.com.pk/company/GFIL,Ghazi Fabrics International Ltd
+GGGL,https://dps.psx.com.pk/company/GGGL,Ghani Global Glass Ltd
+GGL,https://dps.psx.com.pk/company/GGL,Ghani Gases Ltd
+GHGL,https://dps.psx.com.pk/company/GHGL,Ghani Glass Ltd
+GHNI,https://dps.psx.com.pk/company/GHNI,Ghandhara Industries Ltd
+GHNL,https://dps.psx.com.pk/company/GHNL,Ghandhara Nissan Ltd.
+GIL,https://dps.psx.com.pk/company/GIL,Goodluck Industries Ltd
+GLAXO,https://dps.psx.com.pk/company/GLAXO,GlaxoSmithKline Pakistan XD
+GLPL,https://dps.psx.com.pk/company/GLPL,Gillette Pakistan Ltd
+GOC,https://dps.psx.com.pk/company/GOC,GOC (Pak) Limited
+GRYL,https://dps.psx.com.pk/company/GRYL,Grays Leasing Ltd
+GSKCH,https://dps.psx.com.pk/company/GSKCH,GlaxoSmithKline Consumer
+GTYR,https://dps.psx.com.pk/company/GTYR,General Tyre & Rubber Co.
+GVGL,https://dps.psx.com.pk/company/GVGL,Ghani Value Glass Ltd
+GWLC,https://dps.psx.com.pk/company/GWLC,Gharibwal Cement Ltd
+HABSM,https://dps.psx.com.pk/company/HABSM,Habib Sugar Mills Ltd
+HAEL,https://dps.psx.com.pk/company/HAEL,Hala Enterprises Ltd
+HAFL,https://dps.psx.com.pk/company/HAFL,Hafiz Limited
+HAL,https://dps.psx.com.pk/company/HAL,Habib-ADM Ltd
+HASCOL,https://dps.psx.com.pk/company/HASCOL,Hascol Petroleum Ltd XB
+HBL,https://dps.psx.com.pk/company/HBL,Habib Bank Ltd.
+HCAR,https://dps.psx.com.pk/company/HCAR,Honda Atlas Cars (Pakistan) Ltd
+HCL,https://dps.psx.com.pk/company/HCL,Hallmark Company (+)
+HGFA,https://dps.psx.com.pk/company/HGFA,HBL Growth Fund - (A)
+HICL,https://dps.psx.com.pk/company/HICL,Habib Insurance Co. Ltd XD
+HIFA,https://dps.psx.com.pk/company/HIFA,HBL Investment Fund - (A)
+HINO,https://dps.psx.com.pk/company/HINO,Hinopak Motors Ltd
+HINOON,https://dps.psx.com.pk/company/HINOON,Highnoon Laboratories Ltd XDXB
+HIRAT,https://dps.psx.com.pk/company/HIRAT,Hira Textile Mills Ltd
+HMB,https://dps.psx.com.pk/company/HMB,Habib Metropolitan Bank Ltd
+HSM,https://dps.psx.com.pk/company/HSM,Husein Sugar Mills Ltd
+HSPI,https://dps.psx.com.pk/company/HSPI,Huffaz Seamless Pipe Ind.
+HTL,https://dps.psx.com.pk/company/HTL,Hi-Tech Lubricants Ltd
+HUBC,https://dps.psx.com.pk/company/HUBC,Hub Power Company Ltd XR
+HUMNL,https://dps.psx.com.pk/company/HUMNL,Hum Network Ltd
+HWQS,https://dps.psx.com.pk/company/HWQS,Haseeb Waqas Sugar Mills Ltd
+IBFL,https://dps.psx.com.pk/company/IBFL,Ibrahim Fibres Ltd
+IBLHL,https://dps.psx.com.pk/company/IBLHL,IBL HealthCare Ltd.
+ICI,https://dps.psx.com.pk/company/ICI,I. C. I. Pakistan Ltd
+ICIBL,https://dps.psx.com.pk/company/ICIBL,Invest Capital Investment Bank
+ICL,https://dps.psx.com.pk/company/ICL,Ittehad Chemicals Ltd
+IDRT,https://dps.psx.com.pk/company/IDRT,Idrees Textile Mills Ltd XB
+IDSM,https://dps.psx.com.pk/company/IDSM,Ideal Spinning Mills Ltd
+IDYM,https://dps.psx.com.pk/company/IDYM,Indus Dyeing & Mfg Co. Ltd
+IGIHL,https://dps.psx.com.pk/company/IGIHL,IGI Holdings Ltd XD
+IGIL,https://dps.psx.com.pk/company/IGIL,IGI Life Insurance Ltd
+ILP,https://dps.psx.com.pk/company/ILP,Interloop Limited
+ILTM,https://dps.psx.com.pk/company/ILTM,Island Textile Mills Ltd
+INDU,https://dps.psx.com.pk/company/INDU,Indus Motor Company Ltd
+INIL,https://dps.psx.com.pk/company/INIL,International Industries Ltd
+INKL,https://dps.psx.com.pk/company/INKL,International Knitwear Ltd
+ISIL,https://dps.psx.com.pk/company/ISIL,Ismail Industries Ltd
+ISL,https://dps.psx.com.pk/company/ISL,International Steels Ltd
+ISTM,https://dps.psx.com.pk/company/ISTM,Ishaq Textile Mills Ltd
+ITTEFAQ,https://dps.psx.com.pk/company/ITTEFAQ,Ittefaq Iron Industries
+JATM,https://dps.psx.com.pk/company/JATM,J.A.Textile Mills Ltd
+JDMT,https://dps.psx.com.pk/company/JDMT,Janana De  Malucho Textile
+JDWS,https://dps.psx.com.pk/company/JDWS,JDW Sugar Mills Ltd
+JGICL,https://dps.psx.com.pk/company/JGICL,Jubilee General Insurance Co.
+JKSM,https://dps.psx.com.pk/company/JKSM,J.K.Spinning Mills Ltd
+JLICL,https://dps.psx.com.pk/company/JLICL,Jubilee Life Insurance Co. XD
+JOPP,https://dps.psx.com.pk/company/JOPP,Johnson & Phillips (Pakistan) Ltd
+JSBL,https://dps.psx.com.pk/company/JSBL,JS Bank Ltd.
+JSCL,https://dps.psx.com.pk/company/JSCL,Jahangir Siddiqui & Co. Ltd
+JSGCL,https://dps.psx.com.pk/company/JSGCL,JS Global Capital Ltd
+JSIL,https://dps.psx.com.pk/company/JSIL,JS Investments Ltd
+JSML,https://dps.psx.com.pk/company/JSML,Jauharabad Sugar Mills Ltd
+JVDC,https://dps.psx.com.pk/company/JVDC,Javedan Corporation Ltd
+KAPCO,https://dps.psx.com.pk/company/KAPCO,Kot Addu Power Company
+KASBM,https://dps.psx.com.pk/company/KASBM,KASB Modaraba
+KCL,https://dps.psx.com.pk/company/KCL,Karam Ceramics Ltd
+KEL,https://dps.psx.com.pk/company/KEL,K-Electric Ltd
+KHTC,https://dps.psx.com.pk/company/KHTC,Khyber Tobacco Company XD
+KML,https://dps.psx.com.pk/company/KML,Kohinoor Mills Ltd
+KOHC,https://dps.psx.com.pk/company/KOHC,Kohat Cement Co. Ltd.
+KOHE,https://dps.psx.com.pk/company/KOHE,Kohinoor Energy Ltd
+KOHTM,https://dps.psx.com.pk/company/KOHTM,Kohat Textile Mills Ltd
+KOIL,https://dps.psx.com.pk/company/KOIL,Kohinoor Industries Ltd
+KOSM,https://dps.psx.com.pk/company/KOSM,Kohinoor Spinning Mills Ltd
+KPUS,https://dps.psx.com.pk/company/KPUS,Khairpur Sugar Mills Ltd
+KSBP,https://dps.psx.com.pk/company/KSBP,K.S.B.Pumps Company Ltd XD
+KTML,https://dps.psx.com.pk/company/KTML,Kohinoor Textile Mills Ltd
+LEUL,https://dps.psx.com.pk/company/LEUL,Leather-Up Ltd
+LOADS,https://dps.psx.com.pk/company/LOADS,Loads Limited
+LOTCHEM,https://dps.psx.com.pk/company/LOTCHEM,Lotte Chemical Pakistan Ltd
+LPGL,https://dps.psx.com.pk/company/LPGL,Leiner Pak Gelatine Ltd
+LPL,https://dps.psx.com.pk/company/LPL,Lalpir Power Ltd XD
+LUCK,https://dps.psx.com.pk/company/LUCK,Lucky Cement Ltd
+MACFL,https://dps.psx.com.pk/company/MACFL,MACPAC Films Ltd
+MACTER,https://dps.psx.com.pk/company/MACTER,Macter International Ltd
+MARI,https://dps.psx.com.pk/company/MARI,Mari Petroleum Co. Ltd
+MCB,https://dps.psx.com.pk/company/MCB,MCB Bank Ltd.
+MCBAH,https://dps.psx.com.pk/company/MCBAH,MCB-Arif Habib Savings & Inv
+MDTL,https://dps.psx.com.pk/company/MDTL,Media Times Ltd
+MEBL,https://dps.psx.com.pk/company/MEBL,Meezan Bank Ltd.
+MEHT,https://dps.psx.com.pk/company/MEHT,Mahmood Textile Mills Ltd
+MERIT,https://dps.psx.com.pk/company/MERIT,Merit Packaging Ltd
+MFFL,https://dps.psx.com.pk/company/MFFL,Mitchell's Fruit Farms Ltd
+MFL,https://dps.psx.com.pk/company/MFL,Matco Foods Limited
+MIRKS,https://dps.psx.com.pk/company/MIRKS,Mirpurkhas Sugar Mills Ltd
+MLCF,https://dps.psx.com.pk/company/MLCF,Maple Leaf Cement Factory
+MODAM,https://dps.psx.com.pk/company/MODAM,Modaraba Al-Mali
+MQTM,https://dps.psx.com.pk/company/MQTM,Maqbool Textile Mills Ltd
+MRNS,https://dps.psx.com.pk/company/MRNS,Mehran Sugar Mills Ltd
+MSCL,https://dps.psx.com.pk/company/MSCL,Metropolitan  Steel Corp.
+MSOT,https://dps.psx.com.pk/company/MSOT,Masood Textile Mills
+MTL,https://dps.psx.com.pk/company/MTL,Millat Tractors Ltd XD
+MUGHAL,https://dps.psx.com.pk/company/MUGHAL,Mughal Iron & Steel Industries
+MUREB,https://dps.psx.com.pk/company/MUREB,Murree Brewery Company
+NAGC,https://dps.psx.com.pk/company/NAGC,Nagina Cotton Mills Ltd
+NATF,https://dps.psx.com.pk/company/NATF,National Foods Ltd
+NATM,https://dps.psx.com.pk/company/NATM,Nadeem Textile Mills Ltd.
+NBP,https://dps.psx.com.pk/company/NBP,National Bank of Pakistan
+NCL,https://dps.psx.com.pk/company/NCL,Nishat (Chunian) Ltd XD
+NCPL,https://dps.psx.com.pk/company/NCPL,Nishat Chunian Power Ltd
+NESTLE,https://dps.psx.com.pk/company/NESTLE,Nestle Pakistan Ltd. XD
+NETSOL,https://dps.psx.com.pk/company/NETSOL,NetSol Technologies Ltd
+NEXT,https://dps.psx.com.pk/company/NEXT,Next Capital Limited
+NICL,https://dps.psx.com.pk/company/NICL,Nimir Industrial Chemicals Ltd
+NML,https://dps.psx.com.pk/company/NML,Nishat Mills Ltd
+NONS,https://dps.psx.com.pk/company/NONS,Noon Sugar Mills Ltd XD
+NPL,https://dps.psx.com.pk/company/NPL,Nishat Power Ltd
+NPSM,https://dps.psx.com.pk/company/NPSM,N. P. Spinning Mills Ltd.
+NRL,https://dps.psx.com.pk/company/NRL,National Refinery Ltd
+NRSL,https://dps.psx.com.pk/company/NRSL,Nimir Resins Ltd
+NSRM,https://dps.psx.com.pk/company/NSRM,National Silk & Rayon Mills
+OGDC,https://dps.psx.com.pk/company/OGDC,Oil & Gas Development Co. Ltd XD
+OLPL,https://dps.psx.com.pk/company/OLPL,Orix Leasing Pakistan Ltd
 OML,https://dps.psx.com.pk/company/OML,Olympia Mills Limited
-LEUL,https://dps.psx.com.pk/company/LEUL,Leather Up Limited
-SHDT,https://dps.psx.com.pk/company/SHDT,Shadab Textile Mills Limited
-PMRS,https://dps.psx.com.pk/company/PMRS,The Premier Sugar Mills
-MTIL,https://dps.psx.com.pk/company/MTIL,Mian Textile Industries Limited
-SMCPL,https://dps.psx.com.pk/company/SMCPL,Safe Mix Concrete Limited
-ALAC,https://dps.psx.com.pk/company/ALAC,Askari Life Assurance Company Limited
-SURC,https://dps.psx.com.pk/company/SURC,Suraj Cotton Mills Limited
-ALNRS,https://dps.psx.com.pk/company/ALNRS,Al-Noor Sugar Mills Limited
-SBL,https://dps.psx.com.pk/company/SBL,Samba Bank Limited
-INKL,https://dps.psx.com.pk/company/INKL,International Knitwear Limited
-PNSC,https://dps.psx.com.pk/company/PNSC,Pakistan National Shipping Corporation
-HGFA,https://dps.psx.com.pk/company/HGFA,HBL Growth Fund
-FHAM,https://dps.psx.com.pk/company/FHAM,First Habib Modaraba
-PAKOXY,https://dps.psx.com.pk/company/PAKOXY,Pakistan Oxygen Limited
-UCAPM,https://dps.psx.com.pk/company/UCAPM,Unicap Modaraba
-GAMON,https://dps.psx.com.pk/company/GAMON,Gammon Pakistan Limited
-AABS,https://dps.psx.com.pk/company/AABS,Al-Abbas Sugar Mills Limited
+ORIXM,https://dps.psx.com.pk/company/ORIXM,Orix Modaraba
+OTSU,https://dps.psx.com.pk/company/OTSU,Otsuka Pakistan Ltd
+PACE,https://dps.psx.com.pk/company/PACE,Pace (Pakistan) Limited
+PAEL,https://dps.psx.com.pk/company/PAEL,Pak Elektron Ltd
+PAKD,https://dps.psx.com.pk/company/PAKD,Pak Datacom Ltd
+PAKMI,https://dps.psx.com.pk/company/PAKMI,Pak Modaraba 1st
+PAKOXY,https://dps.psx.com.pk/company/PAKOXY,Pakistan Oxygen Ltd XDXB
+PAKRI,https://dps.psx.com.pk/company/PAKRI,Pakistan Reinsurance Co. Ltd XD
+PAKT,https://dps.psx.com.pk/company/PAKT,Pakistan Tobacco Co. XD
+PCAL,https://dps.psx.com.pk/company/PCAL,Pakistan Cables Ltd XD
+PECO,https://dps.psx.com.pk/company/PECO,Pakistan Engineering Co. Ltd.
+PGCL,https://dps.psx.com.pk/company/PGCL,Pakistan Gum & Chemicals Ltd XD
+PGLC,https://dps.psx.com.pk/company/PGLC,Pak- Gulf Leasing Company
+PHDL,https://dps.psx.com.pk/company/PHDL,Pakistan Hotels Developers
+PIBTL,https://dps.psx.com.pk/company/PIBTL,Pakistan Int Bulk Terminal Ltd
+PICT,https://dps.psx.com.pk/company/PICT,Pakistan Int. Container Terminal XD
+PIL,https://dps.psx.com.pk/company/PIL,PICIC Insurance Ltd
+PIM,https://dps.psx.com.pk/company/PIM,Popular Islamic Modaraba
+PINL,https://dps.psx.com.pk/company/PINL,Premier Insurance Ltd
+PIOC,https://dps.psx.com.pk/company/PIOC,Pioneer Cement Ltd
+PKGP,https://dps.psx.com.pk/company/PKGP,Pakgen Power Ltd XD
+PKGS,https://dps.psx.com.pk/company/PKGS,Packages Limited XD
+PMI,https://dps.psx.com.pk/company/PMI,Prudential Modaraba 1st
+PMPK,https://dps.psx.com.pk/company/PMPK,Philip Morris (Pakistan) Ltd
+PMRS,https://dps.psx.com.pk/company/PMRS,Premier Sugar Mills Ltd  XD
+PNSC,https://dps.psx.com.pk/company/PNSC,P. N. S. C.
+POL,https://dps.psx.com.pk/company/POL,Pakistan Oilfields Ltd
+POML,https://dps.psx.com.pk/company/POML,Punjab Oil Mills Ltd
+POWER,https://dps.psx.com.pk/company/POWER,Power Cement Ltd
+PPL,https://dps.psx.com.pk/company/PPL,Pakistan Petroleum Ltd
+PPP,https://dps.psx.com.pk/company/PPP,Pakistan Paper Products Ltd
+PREMA,https://dps.psx.com.pk/company/PREMA,At-Tahur Ltd
+PRET,https://dps.psx.com.pk/company/PRET,Premium Textile Mills Ltd
+PRL,https://dps.psx.com.pk/company/PRL,Pakistan Refinery Ltd
+PRWM,https://dps.psx.com.pk/company/PRWM,Prosperity Weaving Mills Ltd
+PSEL,https://dps.psx.com.pk/company/PSEL,Pakistan Services Ltd
+PSMC,https://dps.psx.com.pk/company/PSMC,Pak Suzuki Motor Co. Ltd
+PSO,https://dps.psx.com.pk/company/PSO,Pakistan State Oil Co. Ltd
+PSX,https://dps.psx.com.pk/company/PSX,Pakistan Stock Exchange Ltd
+PSYL,https://dps.psx.com.pk/company/PSYL,Pakistan Synthetics Ltd
+PTC,https://dps.psx.com.pk/company/PTC,"P.T.C.L. ""A"""
+QUET,https://dps.psx.com.pk/company/QUET,Quetta Textile Mills Ltd
+QUICE,https://dps.psx.com.pk/company/QUICE,Quice Food Industries Ltd
+RCML,https://dps.psx.com.pk/company/RCML,Reliance Cottton Spinning
+REDCO,https://dps.psx.com.pk/company/REDCO,Redco Textiles Ltd
+REWM,https://dps.psx.com.pk/company/REWM,Reliance Weaving Mills
+RICL,https://dps.psx.com.pk/company/RICL,Reliance Insurance Co. Ltd
+RMPL,https://dps.psx.com.pk/company/RMPL,Rafhan Maize Products
+RPL,https://dps.psx.com.pk/company/RPL,Roshan Packages Ltd
+RUBY,https://dps.psx.com.pk/company/RUBY,Ruby Textile Mills Ltd
+RUPL,https://dps.psx.com.pk/company/RUPL,Rupali Polyester Ltd
+SAIF,https://dps.psx.com.pk/company/SAIF,Saif Textile Mills Ltd
+SALT,https://dps.psx.com.pk/company/SALT,Salfi Textile Mills Ltd
+SANSM,https://dps.psx.com.pk/company/SANSM,Sanghar Sugar Mills Ltd
+SAPL,https://dps.psx.com.pk/company/SAPL,Sanofi-aventis Pakistan  Ltd.
+SAPT,https://dps.psx.com.pk/company/SAPT,Sapphire Textile Mills Ltd
+SARC,https://dps.psx.com.pk/company/SARC,Sardar Chemical Industries
+SASML,https://dps.psx.com.pk/company/SASML,Sindh Abadgar's Sugar Mills Ltd
+SAZEW,https://dps.psx.com.pk/company/SAZEW,Sazgar Engineering Works
+SBL,https://dps.psx.com.pk/company/SBL,Samba Bank Ltd.
+SCBPL,https://dps.psx.com.pk/company/SCBPL,Standard Chartered Bank Ltd XD
+SCL,https://dps.psx.com.pk/company/SCL,Shield Corporation Ltd
+SEARL,https://dps.psx.com.pk/company/SEARL,The Searle Company Ltd.
+SEL,https://dps.psx.com.pk/company/SEL,Sitara Energy Ltd
+SEPL,https://dps.psx.com.pk/company/SEPL,Security Papers Ltd
+SERF,https://dps.psx.com.pk/company/SERF,Service Fabrics Ltd
+SERT,https://dps.psx.com.pk/company/SERT,Service Textiles Industries Ltd
+SFL,https://dps.psx.com.pk/company/SFL,Sapphire Fibres Ltd
+SFLL,https://dps.psx.com.pk/company/SFLL,SFL Limited
+SHCM,https://dps.psx.com.pk/company/SHCM,Shadman Cotton Mills
+SHDT,https://dps.psx.com.pk/company/SHDT,Shadab Textile Mills Ltd
+SHEL,https://dps.psx.com.pk/company/SHEL,Shell (Pakistan) Ltd
+SHEZ,https://dps.psx.com.pk/company/SHEZ,Shezan International Ltd
+SHFA,https://dps.psx.com.pk/company/SHFA,Shifa International Hospitals
+SHJS,https://dps.psx.com.pk/company/SHJS,Shahtaj Sugar Mills Ltd XD
+SHNI,https://dps.psx.com.pk/company/SHNI,Shaheen Insurance Co. Ltd XD
+SHSML,https://dps.psx.com.pk/company/SHSML,Shahmurad Sugar Mills Ltd
+SIBL,https://dps.psx.com.pk/company/SIBL,Security Investment Bank Ltd
+SIEM,https://dps.psx.com.pk/company/SIEM,Siemens (Pakistan) Engineering
+SILK,https://dps.psx.com.pk/company/SILK,Silkbank Ltd.
+SINDM,https://dps.psx.com.pk/company/SINDM,Sindh Modaraba
+SITC,https://dps.psx.com.pk/company/SITC,Sitara Chemical Industries Ltd
+SKRS,https://dps.psx.com.pk/company/SKRS,Sakrand Sugar Mills Ltd
+SLCL,https://dps.psx.com.pk/company/SLCL,Security Leasing Corporation Ltd
+SLL,https://dps.psx.com.pk/company/SLL,SME Leasing Ltd
+SMBL,https://dps.psx.com.pk/company/SMBL,Summit Bank Ltd
+SMCPL,https://dps.psx.com.pk/company/SMCPL,Safe Mix Concrete Ltd
+SML,https://dps.psx.com.pk/company/SML,Shakarganj Limited
+SMTM,https://dps.psx.com.pk/company/SMTM,Samin Textiles Ltd
+SNAI,https://dps.psx.com.pk/company/SNAI,Sana Industries Ltd
+SNBL,https://dps.psx.com.pk/company/SNBL,Soneri Bank Ltd. XD
+SNGP,https://dps.psx.com.pk/company/SNGP,Sui Northern Gas Pipelines
+SPEL,https://dps.psx.com.pk/company/SPEL,Synthetic Products Ltd
+SPL,https://dps.psx.com.pk/company/SPL,Sitara Peroxide Ltd
+SPWL,https://dps.psx.com.pk/company/SPWL,Saif Power Ltd XD
+SRVI,https://dps.psx.com.pk/company/SRVI,Service Industries Ltd. XDXB
+SSGC,https://dps.psx.com.pk/company/SSGC,Sui Southern Gas Co. Ltd.
+SSML,https://dps.psx.com.pk/company/SSML,Saritow Spinning Mills Ltd
+SSOM,https://dps.psx.com.pk/company/SSOM,S.S.Oil Mills Ltd
+STCL,https://dps.psx.com.pk/company/STCL,Shabbir Tiles & Ceramics Ltd
+STJT,https://dps.psx.com.pk/company/STJT,Shahtaj Textile Limited
+STML,https://dps.psx.com.pk/company/STML,Shams Textile Mills Ltd
+STPL,https://dps.psx.com.pk/company/STPL,Siddiqsons Tin Plate Ltd
+SURC,https://dps.psx.com.pk/company/SURC,Suraj Cotton Mills Ltd
+SUTM,https://dps.psx.com.pk/company/SUTM,Sunrays Textile Mills Ltd
+SYS,https://dps.psx.com.pk/company/SYS,Systems Limited XDXB
+SZTM,https://dps.psx.com.pk/company/SZTM,Shahzad Textile Mills Ltd
+TATM,https://dps.psx.com.pk/company/TATM,Tata Textile Mills Ltd
+TELE,https://dps.psx.com.pk/company/TELE,Telecard Limited
+TGL,https://dps.psx.com.pk/company/TGL,Tariq Glass Industries Ltd
+THALL,https://dps.psx.com.pk/company/THALL,Thal Limited
+THCCL,https://dps.psx.com.pk/company/THCCL,Thatta Cement Co. Ltd.
+TICL,https://dps.psx.com.pk/company/TICL,Thal Industries Corporation
 TOWL,https://dps.psx.com.pk/company/TOWL,Towellers Limited
-SAIF,https://dps.psx.com.pk/company/SAIF,Saif Textile Mills Limited
-SHEZ,https://dps.psx.com.pk/company/SHEZ,Shezan International Limited
-PGLC,https://dps.psx.com.pk/company/PGLC,Pak-Gulf Leasing Company Limited
-AEL,https://dps.psx.com.pk/company/AEL,Arshad Energy Limited
-SMTM,https://dps.psx.com.pk/company/SMTM,Samin Textiles Limited
-RUBY,https://dps.psx.com.pk/company/RUBY,Ruby Textile Mills Limited
-PINL,https://dps.psx.com.pk/company/PINL,Premier Insurance Limited
-BPBL,https://dps.psx.com.pk/company/BPBL,Balochistan Particle Board Limited
-SFL,https://dps.psx.com.pk/company/SFL,Sapphire Fibres Limited
-RAVT,https://dps.psx.com.pk/company/RAVT,Ravi Textile Mills Limited
-SRVI,https://dps.psx.com.pk/company/SRVI,Service Industries Limited
-MFFL,https://dps.psx.com.pk/company/MFFL,Mitchells Fruit Farms Limited
-COLG,https://dps.psx.com.pk/company/COLG,Colgate-Palmolive (Pakistan) Limited
-MUREB,https://dps.psx.com.pk/company/MUREB,Murree Brewery Company Limited
-NESTLE,https://dps.psx.com.pk/company/NESTLE,Nestle Pakistan Limited
-PSEL,https://dps.psx.com.pk/company/PSEL,Pakistan Services Limited
-OTSU,https://dps.psx.com.pk/company/OTSU,Otsuka Pakistan Limited
-PECO,https://dps.psx.com.pk/company/PECO,Pakistan Engineering Company Limited
-KHTC,https://dps.psx.com.pk/company/KHTC,Khyber Tobacco Company Limited
-SAPL,https://dps.psx.com.pk/company/SAPL,Sanofi-Aventis Pakistan Limited
-BATA,https://dps.psx.com.pk/company/BATA,Bata Pakistan Limited
+TPL,https://dps.psx.com.pk/company/TPL,TPL Corp Limited
+TPLI,https://dps.psx.com.pk/company/TPLI,TPL Insurance Ltd
+TPLP,https://dps.psx.com.pk/company/TPLP,TPL Properties Ltd
+TREET,https://dps.psx.com.pk/company/TREET,Treet Corporation Ltd
+TRG,https://dps.psx.com.pk/company/TRG,TRG Pakistan Ltd
+TRIBL,https://dps.psx.com.pk/company/TRIBL,Trust Investment Bank Ltd
+TRIPF,https://dps.psx.com.pk/company/TRIPF,Tri-Pack Films Ltd XD
+TRPOL,https://dps.psx.com.pk/company/TRPOL,Tri-Star Polyester LtdXD
+TRSM,https://dps.psx.com.pk/company/TRSM,Trust Modaraba
+TSBL,https://dps.psx.com.pk/company/TSBL,Trust Securities  & Brokerage
+TSMF,https://dps.psx.com.pk/company/TSMF,Tri-Star Mutual Fund
+TSPL,https://dps.psx.com.pk/company/TSPL,Tri-Star Power Ltd XD
+UBDL,https://dps.psx.com.pk/company/UBDL,United Brands Ltd
+UBL,https://dps.psx.com.pk/company/UBL,United Bank  Ltd. XD
+UDPL,https://dps.psx.com.pk/company/UDPL,United Distributors
+UNIC,https://dps.psx.com.pk/company/UNIC,United Insurance Co. of Pakistan XB
+UNITY,https://dps.psx.com.pk/company/UNITY,Unity Foods Limited
+UPFL,https://dps.psx.com.pk/company/UPFL,Unilever Pakistan Foods Ltd XD
+UVIC,https://dps.psx.com.pk/company/UVIC,Universal Insurance Co. Ltd.
+WAHN,https://dps.psx.com.pk/company/WAHN,Wah-Noble Chemicals Ltd
+WAVES,https://dps.psx.com.pk/company/WAVES,Waves Singer Pakistan XD
+WTL,https://dps.psx.com.pk/company/WTL,WorldCall Telecom Ltd
+WYETH,https://dps.psx.com.pk/company/WYETH,Wyeth Pakistan Ltd
+YOUW,https://dps.psx.com.pk/company/YOUW,Yousaf Weaving Mills Ltd
+ZAHID,https://dps.psx.com.pk/company/ZAHID,Zahidjee Textile Mills Ltd
+ZIL,https://dps.psx.com.pk/company/ZIL,ZIL Limited XD
+ZTL,https://dps.psx.com.pk/company/ZTL,Zephyr Textiles Ltd
