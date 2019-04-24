@@ -18,7 +18,7 @@ def main():
                 data_retrieved = False
                 while not data_retrieved:
                     time.sleep(1)
-                    r = requests.get(request_path)
+                    r = requests.get(request_path, timeout=5)
                     print('{:03d} - {} returned {}'.format(index, request_path, r.status_code))
                     if r.status_code == requests.codes.OK:
                         json = r.json()
