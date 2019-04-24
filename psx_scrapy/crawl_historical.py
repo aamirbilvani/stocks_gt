@@ -19,10 +19,12 @@ def main():
                 while not data_retrieved:
                     time.sleep(1)
                     r = requests.get(request_path)
+                    print('{:03d} - {} returned {}'.format(index, request_path, r.status_code))
                     if r.status_code == requests.codes.OK:
                         json = r.json()
                         data = json['data']
                         if data is not None:
+                            data_retrieved = True
                             for item in data:
                                 epoch = item[0]
                                 epoch_date = datetime.utcfromtimestamp(int(epoch))
@@ -38,8 +40,6 @@ def main():
                                     year_dict[year][date_string] = {}
                                     
                                 year_dict[year][date_string][symbol] = price
-                
-                print('{:03d} - {} returned {}'.format(index, request_path, r.status_code))
 
                 # if index % 10 == 0:
                 #     break
