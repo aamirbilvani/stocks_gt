@@ -20,21 +20,22 @@ def main():
                 if r.status_code == requests.codes.OK:
                     json = r.json()
                     data = json['data']
-                    for item in data:
-                        epoch = item[0]
-                        epoch_date = datetime.utcfromtimestamp(int(epoch))
-                        year = epoch_date.year
-                        date_string = epoch_date.strftime('%Y-%m-%d')
-                        price = item[1]
-                        volume = item[2]
-                        
-                        if year not in year_dict:
-                            year_dict[year] = {}
-
-                        if date_string not in year_dict[year]:
-                            year_dict[year][date_string] = {}
+                    if data is not None:
+                        for item in data:
+                            epoch = item[0]
+                            epoch_date = datetime.utcfromtimestamp(int(epoch))
+                            year = epoch_date.year
+                            date_string = epoch_date.strftime('%Y-%m-%d')
+                            price = item[1]
+                            volume = item[2]
                             
-                        year_dict[year][date_string][symbol] = price
+                            if year not in year_dict:
+                                year_dict[year] = {}
+
+                            if date_string not in year_dict[year]:
+                                year_dict[year][date_string] = {}
+                                
+                            year_dict[year][date_string][symbol] = price
                 
                 print('{:03d} - {} returned {}'.format(index, request_path, r.status_code))
 
