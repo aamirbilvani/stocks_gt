@@ -1,8 +1,9 @@
-from django.db import models
 import csv
 from datetime import datetime, timedelta
 import os
 from django.conf import settings
+from django.db import models
+from django.core.cache import cache
 
 class Portfolio(models.Model):
     name = models.CharField('Portfolio Name', max_length=50)
@@ -57,6 +58,11 @@ class Stock(models.Model):
         return self.symbol + " - " + self.name
 
     def current_value(self):
+        cache_key = self.symbol + "_CURR"
+        cached_current_value = cache.get(cache_key)
+        if cached_current_value is not None:
+            return cached_current_value
+
         current_date = datetime.today()
         new_date = current_date
 
@@ -78,6 +84,8 @@ class Stock(models.Model):
                     if not value:
                         value = data_list[-2][i].strip()
                     current_value = float(value)
+
+                    cache.set(cache_key, current_value)
                     return current_value
 
     class Meta:
@@ -97,7 +105,15 @@ class StockPick(models.Model):
     def current_value(self):
         return self.stock.current_value() * self.quantity
 
+    def original_value(self):
+        return self.quantity * self.value_per_share
+
     def day_begin_value(self):
+        cache_key = self.stock.symbol + "_DAY_BEGIN"
+        cached_day_begin_value = cache.get(cache_key)
+        if cached_day_begin_value is not None:
+            return cached_day_begin_value * self.quantity
+
         current_date = datetime.today()
         new_date = current_date
         today = True
@@ -123,6 +139,7 @@ class StockPick(models.Model):
                         day_begin_value = data_list[-1][i].strip()
                     
                     day_begin_value = float(day_begin_value)
+                    cache.set(cache_key, day_begin_value)
                     return day_begin_value * self.quantity
 
     def daily_pl(self):        
@@ -132,13 +149,17 @@ class StockPick(models.Model):
         return self.daily_pl() / self.current_value() * 100
 
     def total_pl(self):
-        original_value = self.quantity * self.value_per_share
-        return self.current_value() - original_value
+        return self.current_value() - self.original_value()
 
     def total_pl_percent(self):
         return self.total_pl() / self.current_value() * 100
 
     def year_begin_value(self):
+        cache_key = self.stock.symbol + "_YEAR_BEGIN"
+        cached_year_begin_value = cache.get(cache_key)
+        if cached_year_begin_value is not None:
+            return cached_year_begin_value * self.quantity
+
         current_date = datetime.today()
         year = current_date.year - 1
         
@@ -163,6 +184,7 @@ class StockPick(models.Model):
             year -= 1
         
         year_begin_value = float(value)
+        cache.set(cache_key, year_begin_value)
         return year_begin_value * self.quantity
     
     def ytd_pl(self):

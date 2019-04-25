@@ -1,70 +1,118 @@
 {% extends 'base.html' %}
+{% load humanize %}
+{% load stockpick_extras %} 
+
 {% block title %}
 GT Stocks - Portfolio {{portfolio.name}}
 {% endblock %}
 
 {% block content %}
-{% load stockpick_extras %} 
-{% if portfolio %}
-    <div class="container">
-        <h2>Portfolio: {{portfolio.name}}</h2>
-        <div class="table-responsive">
-            <table class="table table-bordered w-auto">
-                <thead>
-                    <tr>
-                        <th scope="col">SYMBOL</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Current Price</th>
-                        <th scope="col">Avg Cost</th>
-                        <th scope="col"># Shares</th>
-                        <th scope="col">Market Value</th>
-                        <th scope="col">Day's P/L</th>
-                        <th scope="col">Day's P/L (%)</th>
-                        <th scope="col">YTD P/L</th>
-                        <th scope="col">YTD P/L (%)</th>
-                        <th scope="col">Total P/L</th>
-                        <th scope="col">Total P/L (%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for stockpick in portfolio.stockpicks.all %}
-                        <tr>
-                            <th scope="row">{{stockpick.stock.symbol}}</th>
-                            <td>{{stockpick.stock.name}}</td>
-                            <td>{{stockpick.stock|current_value|stringformat:".2f"}}</td>
-                            <td>{{stockpick.value_per_share|stringformat:".2f"}}</td>
-                            <td>{{stockpick.quantity}}</td>
-                            <td>{{stockpick|current_value|stringformat:".2f"}}</td>
-                            <td>{{stockpick|daily_pl|stringformat:".2f"}}</td>
-                            <td>{{stockpick|daily_pl_percent|stringformat:".2f"}}%</td>
-                            <td>{{stockpick|ytd_pl|stringformat:".2f"}}</td>
-                            <td>{{stockpick|ytd_pl_percent|stringformat:".2f"}}%</td>
-                            <td>{{stockpick|total_pl|stringformat:".2f"}}</td>
-                            <td>{{stockpick|total_pl_percent|stringformat:".2f"}}%</td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>{{portfolio|current_value|stringformat:".2f"}}</td>
-                        <td>{{portfolio|daily_pl|stringformat:".2f"}}</td>
-                        <td>{{portfolio|daily_pl_percent|stringformat:".2f"}}%</td>
-                        <td>{{portfolio|ytd_pl|stringformat:".2f"}}</td>
-                        <td>{{portfolio|ytd_pl_percent|stringformat:".2f"}}%</td>
-                        <td>{{portfolio|total_pl|stringformat:".2f"}}</td>
-                        <td>{{portfolio|total_pl_percent|stringformat:".2f"}}%</td>
-                    </tr>
-                </tfoot>
-            </table>
+    {% if portfolio %}
+        <div class="container">
+            <h2>Portfolio: {{portfolio.name}}</h2>
+            <hr>
+            <div class="stocks-table">
+                {% for stockpick in portfolio.stockpicks.all %}
+                    <div class="row row-item">
+                        <div class="col col-first">
+                            <div class="symbol">{{stockpick.stock.symbol}}</div>
+                            <div class="name">{{stockpick.stock.name}}</div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Current Price</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="current-price value main-value">{{stockpick.stock|current_value|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Avg. Cost</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="original-price value">{{stockpick.value_per_share|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Quantity</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="number-shares value">{{stockpick.quantity|intcomma}}</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Current Value</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="current-price value main-value">{{stockpick|current_value|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Original Cost</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="original-price value">{{stockpick|original_value|floatformat:2|intcomma}}</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Daily P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ stockpick|daily_pl|sign }}">{{stockpick|daily_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">YTD P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ stockpick|ytd_pl|sign }}">{{stockpick|ytd_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Total P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ stockpick|total_pl|sign }}">{{stockpick|total_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Daily P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ stockpick|daily_pl_percent|sign }}">{{stockpick|daily_pl_percent|floatformat:2}}%</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">YTD P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ stockpick|ytd_pl_percent|sign }}">{{stockpick|ytd_pl_percent|floatformat:2}}%</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Total P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ stockpick|total_pl|sign }}">{{stockpick|total_pl_percent|floatformat:2}}%</div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+{% endblock %}
 
+{% block end_scripts %}
+    <!-- <script type="text/javascript">
+        $('document').ready(function() {
+            values = $('.pn-value');
+            for (i = 0; i < values.length; i++) {
+                if (parseFloat($(values[i]).text()) > 0) {
+                    $(values[i]).addClass('positive');
+                }
+                else if (parseFloat($(values[i]).text()) < 0) {
+                    $(values[i]).addClass('negative');
+                }
+            }
+        });
+    </script> -->
 {% endblock %}

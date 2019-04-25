@@ -7,6 +7,10 @@ def current_value(obj):
     return obj.current_value()
 
 @register.filter
+def original_value(obj):
+    return obj.original_value()
+
+@register.filter
 def daily_pl(obj):
     return obj.daily_pl()
 
@@ -29,3 +33,12 @@ def ytd_pl(obj):
 @register.filter
 def ytd_pl_percent(obj):
     return obj.ytd_pl_percent()
+
+@register.filter
+def sign(obj):
+    if obj > 0:
+        return "positive"
+    elif obj < 0:
+        return "negative"
+    else:
+        return ""

@@ -41,3 +41,68 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.container {
+  align-self: flex-start;
+  margin-top: 1.6em;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.stocks-table .row-item {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+.stocks-table .symbol {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #1550af;
+}
+
+.stocks-table .name {
+  font-size: 0.6em;
+  font-weight: 200;
+  margin-top: 0.5em;
+  color: #666;
+}
+
+.stocks-table .col-first {
+  align-self: center;
+}
+
+.stocks-table .inner-row {
+  justify-content: space-around;
+}
+
+.stocks-table .label {
+  font-size: 0.6em;
+  font-weight: 200;
+  color: #666;
+}
+
+.stocks-table .value {
+  font-weight: 200;
+}
+
+.stocks-table .main-value {
+  font-weight: 700;
+}
+
+.stocks-table .positive {
+  color: #3e9923;
+}
+
+.stocks-table .negative {
+  color: #ff0000;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
