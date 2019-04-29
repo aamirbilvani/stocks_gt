@@ -41,4 +41,4 @@ def sign(obj):
     elif obj < 0:
         return "negative"
     else:
-        return ""
+        return "zero"

@@ -16,8 +16,15 @@ class Portfolio(models.Model):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)
         portfolio_value = 0.0
         for stockpick in stockpicks:
-            portfolio_value += (stockpick.stock.current_value() * stockpick.quantity)
+            portfolio_value += (stockpick.current_value())
         return portfolio_value
+
+    def original_value(self):
+        stockpicks = StockPick.objects.filter(portfolio_id=self.id)
+        portfolio_original_value = 0.0
+        for stockpick in stockpicks:
+            portfolio_original_value += (stockpick.original_value())
+        return portfolio_original_value
 
     def daily_pl(self):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)

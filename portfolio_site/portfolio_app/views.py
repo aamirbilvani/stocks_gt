@@ -11,10 +11,20 @@ class PortfolioListView(ListView):
     model = Portfolio
     context_object_name = 'portfolio_list'
 
+    def get_context_data(self, **kwargs):
+        context = super(PortfolioListView, self).get_context_data(**kwargs)
+        context['back_url'] = "/"
+        return context
+
 class PortfolioDetailView(DetailView):
     model = Portfolio
     template_name = 'portfolio_app/portfolio_details.html'
     context_object_name = 'portfolio'
+
+    def get_context_data(self, **kwargs):
+        context = super(PortfolioDetailView, self).get_context_data(**kwargs)
+        context['back_url'] = "/"
+        return context
 
 class PortfolioCreateView(CreateView):
     model = Portfolio
@@ -27,6 +37,8 @@ class PortfolioCreateView(CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(PortfolioCreateView, self).get_context_data(**kwargs)
+        context['cancel_url'] = "/"
+        context['back_url'] = "/"
         if self.request.POST:
             context['stockpicks'] = StockPickFormSet(self.request.POST)
         else:
@@ -55,6 +67,9 @@ class PortfolioEditView(UpdateView):
 
     def get_context_data(self, **kwargs):
         context = super(PortfolioEditView, self).get_context_data(**kwargs)
+        context['cancel_url'] = self.get_success_url()
+        context['back_url'] = self.get_success_url()
+
         if self.request.POST:
             context['stockpicks'] = StockPickFormSet(self.request.POST, instance=self.object)
             context['stockpicks'].full_clean()

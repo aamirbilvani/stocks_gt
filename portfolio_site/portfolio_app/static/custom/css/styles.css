@@ -12,6 +12,35 @@ body {
   background-color: #ffffff;
 }
 
+.navbar .back-button{
+  flex: 1;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+} 
+
+.navbar .back-button .button {
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar .logo{
+  flex: 1;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.navbar .menu{
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -47,20 +76,56 @@ body {
   margin-top: 1.6em;
 }
 
-@media only screen and (max-width: 720px) {
-  body {
+.container-wide {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .stocks-table {
     font-size: 12px;
   }
 }
 
-.stocks-table .row-item {
+.portfolio-list .row {
+  border-top: 1px solid #dee2e6;
+}
+
+.portfolio-list .row2 {
+  /* border-bottom: 1px solid rgb(0,0,0,0.2); */
+  background-color: rgb(0,0,0,0.05);
+}
+
+.row.add-portfolio {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.portfolio-list .col,
+.portfolio-list .col-9 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.stocks-table .card {
+  padding: 0.4em;
+  margin-bottom: 0.5em;
+  background-color: #f5f5f5;
+}
+
+.stocks-table .card.portfolio-totals{
+  background-color: #f4ffef;
+  margin-top: 1em;
+}
+
+/* .stocks-table .row-item {
   border-bottom: 1px solid rgba(0,0,0,.1);
   padding-top: 0.4em;
   padding-bottom: 0.4em;
-}
+} */
 
 .stocks-table .symbol {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 800;
   color: #1550af;
 }
@@ -73,7 +138,9 @@ body {
 
 .stocks-table .col-first {
   align-self: center;
-  padding-right: unset;
+  padding-right: 0em;
+  /* padding-left: 0.5em; */
+  min-width: 6em;
 }
 
 .stocks-table .inner-row {
@@ -83,10 +150,6 @@ body {
 .stocks-table .label {
   font-size: 0.6em;
   color: #666;
-}
-
-.stocks-table .value {
-  /* font-weight: 200; */
 }
 
 .stocks-table .main-value {
@@ -101,7 +164,95 @@ body {
   color: #ff0000;
 }
 
+.stocks-table .zero {
+  color: #6b98e0;
+}
+
 hr {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.stockpicks-table .card {
+  margin-bottom: 0.5em;
+  background-color: #f5f5f5;
+}
+
+.stockpicks-table .stockpick-row {
+  padding: 0.5em;
+}
+
+/* .stockpick-row .form-row {
+  width: 70%;
+} */
+
+.stockpick-row .form-row .col {
+  flex-grow: 1;
+}
+
+.stockpick-row .form-row .delete-button-placeholder {
+  flex-grow: unset !important;
+}
+
+input.currency {
+  text-align: right;
+  padding-right: 15px;
+}
+.input-group .form-control {
+  float: none;
+}
+
+.stockpicks-table .delete-row {
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: calc(1.5em + .75rem + 2px);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: rgb(0,0,0,0.2);
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
 }

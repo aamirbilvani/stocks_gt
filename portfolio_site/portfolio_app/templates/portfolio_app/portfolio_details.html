@@ -8,11 +8,78 @@ GT Stocks - Portfolio {{portfolio.name}}
 
 {% block content %}
     {% if portfolio %}
-        <div class="container">
-            <h2>Portfolio: {{portfolio.name}}</h2>
-            <hr>
+        <div class="container container-wide">
+            <div class="text-center">
+                <span class="h2">Portfolio: {{portfolio.name}}</span>
+                <span>(</span>
+                <a href="{{request.path}}/edit">edit</a>
+                <span>)</span>
+            </div>
             <div class="stocks-table">
+                <div class="card portfolio-totals">
+                    <div class="row row-item">
+                        <div class="col col-first">
+                            <div class="symbol">TOTAL</div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Current Value</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="current-price value main-value">{{portfolio|current_value|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Original Cost</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="original-price value">{{portfolio|original_value|floatformat:2|intcomma}}</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Daily P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ portfolio|daily_pl|sign }}">{{portfolio|daily_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">YTD P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ portfolio|ytd_pl|sign }}">{{portfolio|ytd_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Total P/L</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss value main-value {{ portfolio|total_pl|sign }}">{{portfolio|total_pl|floatformat:2|intcomma}}</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row inner-row">
+                                <div class="label">Daily P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ portfolio|daily_pl_percent|sign }}">{{portfolio|daily_pl_percent|floatformat:2}}%</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">YTD P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ portfolio|ytd_pl_percent|sign }}">{{portfolio|ytd_pl_percent|floatformat:2}}%</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Total P/L (%)</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="profit-loss-percent value main-value {{ portfolio|total_pl|sign }}">{{portfolio|total_pl_percent|floatformat:2}}%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
                 {% for stockpick in portfolio.stockpicks.all %}
+                <div class="card">
                     <div class="row row-item">
                         <div class="col col-first">
                             <div class="symbol">{{stockpick.stock.symbol}}</div>
@@ -93,26 +160,11 @@ GT Stocks - Portfolio {{portfolio.name}}
                             </div>
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>
     {% else %}
         <p>No polls are available.</p>
     {% endif %}
-{% endblock %}
-
-{% block end_scripts %}
-    <!-- <script type="text/javascript">
-        $('document').ready(function() {
-            values = $('.pn-value');
-            for (i = 0; i < values.length; i++) {
-                if (parseFloat($(values[i]).text()) > 0) {
-                    $(values[i]).addClass('positive');
-                }
-                else if (parseFloat($(values[i]).text()) < 0) {
-                    $(values[i]).addClass('negative');
-                }
-            }
-        });
-    </script> -->
 {% endblock %}

@@ -1,60 +1,74 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
 
 {% block header_extras %}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css"> -->
 {% endblock %}
 
 {% block content %}
     <div class="container">
-        <form action="" method="POST">
+        <form class="portfolio-form" action="" method="POST">
             {% csrf_token %}
-            {{form.as_p}}
+            {{ form.non_field_errors }}
 
-            <div class="table-responsive">
-                <table class="table w-auto">
-                    {{stockpicks.management_form}}
+            <div class="form-group">
+                <label for="id_name">Portfolio Name</label>
+                {{ form.name.errors }}
+                {% render_field form.name class="form-control" placeholder="Enter Portfolio Name" %}
+            </div>
+            <div class="strike">
+                <span>Add Stocks</span>
+            </div>
+            <div class="stockpicks-table">
+                {{stockpicks.management_form}}
 
-                    {% for form in stockpicks.forms %}
-                        {% if forloop.first %}
-                            <thead>
-                                <tr>
-                                    {% for field in form.visible_fields %}
-                                        <th>{{ field.label|capfirst }}</th>
-                                    {% endfor %}
-                                </tr>
-                            </thead>
-                        {% endif %}
-                        <tr class="{% cycle 'row1' 'row2' %} formset_row">
-                            {% for field in form.visible_fields %}
-                                <td>
-                                    {# Include the hidden fields in the form #}
-                                    {% if forloop.first %}
-                                        {% for hidden in form.hidden_fields %}
-                                            {{ hidden }}
-                                        {% endfor %}
-                                    {% endif %}
-                                    {{ field.errors.as_ul }}
-                                    {{ field }}
-                                </td>
-                            {% endfor %}
-                        </tr>
-                    {% endfor %}
-                </table>
-                <input type="submit" value="Save"/> 
-                <a href="/">Cancel</a>
+                {% for stockpick_form in stockpicks.forms %}
+                    <div class="stockpick-row card">
+                        {% for stockpick_hidden in stockpick_form.hidden_fields %}
+                            {{ stockpick_hidden }}
+                        {% endfor %}
+
+                        <div class="form-group">
+                            {{ stockpick_form.stock.errors }}
+                            {% render_field stockpick_form.stock class="form-control stockpick-select" %}
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                {{ stockpick_form.value_per_share.errors }}
+                                {% render_field stockpick_form.value_per_share class="form-control" placeholder="Price" %}
+                            </div>
+                            <div class="col">
+                                {{ stockpick_form.quantity.errors }}
+                                {% render_field stockpick_form.quantity class="form-control" placeholder="Quantity" %}
+                            </div>
+                            <div class="col delete-button-placeholder">
+                                {{ stockpick_form.DELETE.errors }}
+                                {{ stockpick_form.DELETE }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr>
+                <div class="footer-buttons row text-center">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <input type="submit" class="btn btn-success" value="Save"/> 
+                    </div>
+                    <div class="col">
+                        <a href="{{ cancel_url }}" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
 {% endblock %}
 
 {% block end_scripts %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.js"></script>
-    <script type="text/javascript">
-        $('.formset_row').formset({
-            addText: 'Add Stock',
-            deleteText: 'remove',
-            prefix: 'stockpicks'
-        });
-    </script>
+    <script src="{% static 'custom/js/jquery.formset.gt-stocks.js' %}"></script>
+    <script src="{% static 'custom/js/misc.js' %}"></script>
 {% endblock %}

@@ -6,24 +6,29 @@ GT STocks - Home
 {% block content %}   
     <div class="container">
         {% if portfolio_list %}
-            <h2>Portfolios</h2>
-            <table class="table table-hover">
-                <tbody>
-                    {% for portfolio in portfolio_list %}
-                        <tr>
-                            <td>
-                                <a href="portfolio/{{ portfolio.id }}">{{ portfolio }}</a>
-                            </td>
-                            <td>
-                                <a href="portfolio/{{ portfolio.id }}/edit">edit</a>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <div class="h2">Portfolios</div>
+            <div class="portfolio-list">
+                {% for portfolio in portfolio_list %}
+                    <div class="row {% cycle 'row1' 'row2' %}">
+                        <div class="col-9">
+                            <a href="portfolio/{{ portfolio.id }}">{{ portfolio }}</a>
+                        </div>
+                        <div class="col text-right">
+                            (<a href="portfolio/{{ portfolio.id }}/edit">edit</a>)
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         {% else %}
             <p>No portfolios have been created.</p>
         {% endif %}
-        <a href="new">Add new</a>
+        <div class="row add-portfolio">
+            <div class="col">
+                <a href="new">Add new</a>
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block back_button %}
 {% endblock %}
