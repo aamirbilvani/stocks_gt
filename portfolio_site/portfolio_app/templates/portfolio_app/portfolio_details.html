@@ -9,11 +9,18 @@ GT Stocks - Portfolio {{portfolio.name}}
 {% block content %}
     {% if portfolio %}
         <div class="container container-wide">
-            <div class="text-center">
-                <span class="h2">{{portfolio.name}}</span>
-                <a href="{{request.path}}/edit">
-                    <i class="fas fa-edit"></i>
-                </a>
+            <div class="row align-items-end">
+                <div class="col-10 text-left">
+                    <span class="h2">{{portfolio.name}}</span>
+                    <a href="{{request.path}}/edit">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </div>
+                <div class="col text-right refresh-button">
+                    <a href="#" onclick="window.location.reload();">
+                        <i class="fas fa-sync-alt"></i>
+                    </a>
+                </div>
             </div>
             <div class="stocks-table">
                 <div class="card portfolio-totals">
