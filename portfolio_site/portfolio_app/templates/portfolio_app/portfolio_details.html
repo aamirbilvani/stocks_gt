@@ -10,10 +10,10 @@ GT Stocks - Portfolio {{portfolio.name}}
     {% if portfolio %}
         <div class="container container-wide">
             <div class="text-center">
-                <span class="h2">Portfolio: {{portfolio.name}}</span>
-                <span>(</span>
-                <a href="{{request.path}}/edit">edit</a>
-                <span>)</span>
+                <span class="h2">{{portfolio.name}}</span>
+                <a href="{{request.path}}/edit">
+                    <i class="fas fa-edit"></i>
+                </a>
             </div>
             <div class="stocks-table">
                 <div class="card portfolio-totals">

@@ -14,7 +14,10 @@ GT STocks - Home
                             <a href="portfolio/{{ portfolio.id }}">{{ portfolio }}</a>
                         </div>
                         <div class="col text-right">
-                            (<a href="portfolio/{{ portfolio.id }}/edit">edit</a>)
+                            <!-- (<a href="portfolio/{{ portfolio.id }}/edit">edit</a>) -->
+                            <a href="portfolio/{{ portfolio.id }}/edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
                         </div>
                     </div>
                 {% endfor %}
@@ -24,7 +27,10 @@ GT STocks - Home
         {% endif %}
         <div class="row add-portfolio">
             <div class="col">
-                <a href="new">Add new</a>
+                <a href="new">
+                    <i class="fas fa-plus"></i>
+                    Add new
+                </a>
             </div>
         </div>
     </div>

@@ -136,7 +136,7 @@
                 addButton = $$.parent().find('tr:last a');
                 addButton.parents('tr').addClass(options.formCssClass + '-add');
             } else if ($$.hasClass('stockpick-row')) {
-                $('.stockpicks-table .footer-buttons .col:first').append('<a class="' + options.addCssClass + " " + options.addCssAdditionalClass + '" href="javascript:void(0)">' + options.addText + '</a>');
+                $('.stockpicks-table .footer-buttons .col:first').append('<a class="' + options.addCssClass + " " + options.addCssAdditionalClass + '" href="javascript:void(0)"><i class="fas fa-plus"></i> ' + options.addText + '</a>');
                 addButton = $('.' + options.addCssClass);
 
             } else {
