@@ -89,7 +89,9 @@ GT Stocks - Portfolio {{portfolio.name}}
                 <div class="card">
                     <div class="row row-item">
                         <div class="col col-first">
-                            <div class="symbol">{{stockpick.stock.symbol}}</div>
+                            <a href="{{stockpick.stock.url}}">
+                                <div class="symbol">{{stockpick.stock.symbol}}</div>
+                            </a>
                             <div class="name">{{stockpick.stock.name}}</div>
                         </div>
                         <div class="col">
