@@ -1,5 +1,5 @@
 import csv
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 import os
 from django.conf import settings
 from django.db import models
@@ -26,35 +26,44 @@ class Portfolio(models.Model):
             portfolio_original_value += (stockpick.original_value())
         return portfolio_original_value
 
-    def daily_pl(self):
+    def day_begin_value(self):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)
         day_begin_value = 0.0
         for stockpick in stockpicks:
             day_begin_value += stockpick.day_begin_value()
-        return self.current_value() - day_begin_value
+        return day_begin_value
+
+    def daily_pl(self):
+        return self.current_value() - self.day_begin_value()
     
     def daily_pl_percent(self):
-        return self.daily_pl() / self.current_value() * 100
+        return self.daily_pl() / self.day_begin_value() * 100
 
-    def total_pl(self):
+    def total_value(self):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)
         total_value = 0.0
         for stockpick in stockpicks:
             total_value += stockpick.quantity * stockpick.value_per_share
-        return self.current_value() - total_value
+        return total_value
+
+    def total_pl(self):
+        return self.current_value() - self.total_value()
 
     def total_pl_percent(self):
-        return self.total_pl() / self.current_value() * 100
+        return self.total_pl() / self.total_value() * 100
 
-    def ytd_pl(self):
+    def year_begin_value(self):
         stockpicks = StockPick.objects.filter(portfolio_id=self.id)
         year_begin_value = 0.0
         for stockpick in stockpicks:
             year_begin_value += stockpick.year_begin_value()
-        return self.current_value() - year_begin_value
+        return year_begin_value
+
+    def ytd_pl(self):
+        return self.current_value() - self.year_begin_value()
     
     def ytd_pl_percent(self):
-        return self.ytd_pl() / self.current_value() * 100
+        return self.ytd_pl() / self.year_begin_value() * 100
 
 class Stock(models.Model):
     name = models.CharField('Company Name', max_length=255)
@@ -103,7 +112,7 @@ class StockPick(models.Model):
     stock = models.ForeignKey(Stock, on_delete=models.PROTECT)
     quantity = models.IntegerField('Quantity')
     value_per_share = models.FloatField('Value per share')
-    date_added = models.DateTimeField('Date Added', auto_now_add=True)
+    date_added = models.DateField('Date Added')
     portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE, related_name='stockpicks')
 
     def __str__(self):
@@ -153,13 +162,13 @@ class StockPick(models.Model):
         return self.current_value() - self.day_begin_value()      
     
     def daily_pl_percent(self):
-        return self.daily_pl() / self.current_value() * 100
+        return self.daily_pl() / self.day_begin_value() * 100
 
     def total_pl(self):
         return self.current_value() - self.original_value()
 
     def total_pl_percent(self):
-        return self.total_pl() / self.current_value() * 100
+        return self.total_pl() / self.original_value() * 100
 
     def year_begin_value(self):
         cache_key = self.stock.symbol + "_YEAR_BEGIN"
@@ -198,4 +207,11 @@ class StockPick(models.Model):
         return self.current_value() - self.year_begin_value()
 
     def ytd_pl_percent(self):
-        return self.ytd_pl() / self.current_value() * 100
+        return self.ytd_pl() / self.year_begin_value() * 100
+
+    def annualized_return(self):
+        today = date.today()
+        time_period = today - self.date_added
+        time_period_years = time_period.days / 365
+        annualized_return = ((1 + self.total_pl_percent() / 100) ** (1 / time_period_years)) - 1
+        return annualized_return * 100

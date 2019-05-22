@@ -5,6 +5,10 @@
 {% block header_extras %}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!-- Fengyuan Chen's Datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block content %}
@@ -42,6 +46,12 @@
                             <div class="col">
                                 {{ stockpick_form.quantity.errors }}
                                 {% render_field stockpick_form.quantity class="form-control" placeholder="Quantity" %}
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                {{ stockpick_form.date_added.errors }}
+                                {{ stockpick_form.date_added }}
                             </div>
                             <div class="col delete-button-placeholder">
                                 {{ stockpick_form.DELETE.errors }}

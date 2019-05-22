@@ -130,6 +130,10 @@ body {
   color: #1550af;
 }
 
+.stocks-table .symbol.black {
+  color: #000000;
+}
+
 .stocks-table .name {
   font-size: 0.6em;
   margin-top: 0.5em;
@@ -182,9 +186,13 @@ hr {
   padding: 0.5em;
 }
 
-/* .stockpick-row .form-row {
-  width: 70%;
-} */
+.stockpick-row .form-group {
+  margin-bottom: 0em;
+}
+
+.stockpick-row .form-row {
+  margin-top: 0.5em;
+}
 
 .stockpick-row .form-row .col {
   flex-grow: 1;

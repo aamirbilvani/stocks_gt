@@ -26,7 +26,7 @@ GT Stocks - Portfolio {{portfolio.name}}
                 <div class="card portfolio-totals">
                     <div class="row row-item">
                         <div class="col col-first">
-                            <div class="symbol">TOTAL</div>
+                            <div class="symbol black">TOTAL</div>
                         </div>
                         <div class="col">
                             <div class="row inner-row">
@@ -126,6 +126,12 @@ GT Stocks - Portfolio {{portfolio.name}}
                             </div>
                             <div class="row inner-row">
                                 <div class="original-price value">{{stockpick|original_value|floatformat:2|intcomma}}</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="label">Annual Return</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="original-price value main-value">{{stockpick|annualized_return|floatformat:2}}%</div>
                             </div>
                         </div>
                         <div class="col">

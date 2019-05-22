@@ -161,6 +161,15 @@
                 new_select = row.find('.stockpick-select');
                 initializeSelect2(new_select);
 
+                // Initialize datepicker on the date_added input in new row
+                new_datepicker = row.find('input.date-picker-input');
+                new_datepicker_trigger = row.find('button.datepicker-trigger');
+                $(new_datepicker).datepicker({
+                    format:'yyyy-mm-dd',
+                    autoHide:true,
+                    trigger:$(new_datepicker_trigger)[0],
+                });
+
                 return false;
             });
         }

@@ -13,8 +13,18 @@ $('.stockpick-row').formset({
 });
 
 $(document).ready(function() {
-    //onload: call the above function 
+    //onload: initialize select2
     $(".stockpick-select").each(function() {
         initializeSelect2($(this));
+    });
+
+    //onload: initialize datepicker
+    $(".date-picker-input").each(function() {
+        triggerElement = $(this).next().find('button.datepicker-trigger')[0]
+        $(this).datepicker({
+            format:'yyyy-mm-dd',
+            autoHide:true,
+            trigger:$(triggerElement),
+        });
     });
 });

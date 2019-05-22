@@ -35,6 +35,10 @@ def ytd_pl_percent(obj):
     return obj.ytd_pl_percent()
 
 @register.filter
+def annualized_return(obj):
+    return obj.annualized_return()
+
+@register.filter
 def sign(obj):
     if obj > 0:
         return "positive"
