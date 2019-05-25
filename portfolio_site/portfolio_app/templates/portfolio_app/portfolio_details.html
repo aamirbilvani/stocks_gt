@@ -41,6 +41,12 @@ GT Stocks - Portfolio {{portfolio.name}}
                             <div class="row inner-row">
                                 <div class="original-price value">{{portfolio|original_value|floatformat:2|intcomma}}</div>
                             </div>
+                            <div class="row inner-row">
+                                <div class="label">Annualized Return</div>
+                            </div>
+                            <div class="row inner-row">
+                                <div class="original-price value">{{portfolio|annualized_return|floatformat:2}}%</div>
+                            </div>
                         </div>
                         <div class="col">
                             <div class="row inner-row">
@@ -85,7 +91,7 @@ GT Stocks - Portfolio {{portfolio.name}}
                     </div>
                 </div>
                 <hr>
-                {% for stockpick in portfolio.stockpicks.all %}
+                {% for stockpick in stockpick_sets %}
                 <div class="card">
                     <div class="row row-item">
                         <div class="col col-first">
@@ -128,7 +134,7 @@ GT Stocks - Portfolio {{portfolio.name}}
                                 <div class="original-price value">{{stockpick|original_value|floatformat:2|intcomma}}</div>
                             </div>
                             <div class="row inner-row">
-                                <div class="label">Annual Return</div>
+                                <div class="label">Annualized Return</div>
                             </div>
                             <div class="row inner-row">
                                 <div class="original-price value main-value">{{stockpick|annualized_return|floatformat:2}}%</div>

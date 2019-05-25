@@ -65,6 +65,13 @@ class Portfolio(models.Model):
     def ytd_pl_percent(self):
         return self.ytd_pl() / self.year_begin_value() * 100
 
+    def annualized_return(self):
+        stockpicks = StockPick.objects.filter(portfolio_id=self.id)
+        annualized_return_total = 0.0
+        for stockpick in stockpicks:
+            annualized_return_total += stockpick.annualized_return() / 100 * stockpick.original_value()
+        return annualized_return_total / self.original_value() * 100
+
 class Stock(models.Model):
     name = models.CharField('Company Name', max_length=255)
     url = models.CharField('URL', max_length=255)
